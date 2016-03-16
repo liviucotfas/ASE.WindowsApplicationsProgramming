@@ -19,7 +19,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "ConstructorD
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Collections, Exceptions and Other Topics", "3. Collections, Exceptions and Other Topics", "{2EF76BD0-9579-4300-BFEB-C18E64CF9FF1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections", "Collections\Collections.csproj", "{A0469F13-0753-41C3-B67B-CA76758D9A23}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StandardCollections", "StandardCollections\StandardCollections.csproj", "{A0469F13-0753-41C3-B67B-CA76758D9A23}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GarbageCollection", "GarbageCollection\GarbageCollection.csproj", "{FF7F4A29-D472-47EC-ADD1-6DDC90B90F07}"
 EndProject
@@ -30,6 +30,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Windows Forms", "4. Windows Forms", "{A768DE76-513E-401C-A677-501E4BBA480E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Operators", "Operators\Operators.csproj", "{D9184C02-2ADA-42F2-86D3-70836754205D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomCollections", "CustomCollections\CustomCollections.csproj", "{0F018367-20E1-4AF9-BEF9-C21AB4C9D838}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,6 +79,10 @@ Global
 		{D9184C02-2ADA-42F2-86D3-70836754205D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9184C02-2ADA-42F2-86D3-70836754205D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9184C02-2ADA-42F2-86D3-70836754205D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F018367-20E1-4AF9-BEF9-C21AB4C9D838}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F018367-20E1-4AF9-BEF9-C21AB4C9D838}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F018367-20E1-4AF9-BEF9-C21AB4C9D838}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F018367-20E1-4AF9-BEF9-C21AB4C9D838}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,5 +98,6 @@ Global
 		{E3C49D16-324F-4913-AEDB-953A5B11FFEA} = {2EF76BD0-9579-4300-BFEB-C18E64CF9FF1}
 		{918F2EA2-98DB-4342-BD47-1EFBCB7EE56B} = {80D947C5-D1E9-4814-BD59-2E49DF41D524}
 		{D9184C02-2ADA-42F2-86D3-70836754205D} = {E3FBE13A-79C0-4694-BF7C-1B8AEC22A973}
+		{0F018367-20E1-4AF9-BEF9-C21AB4C9D838} = {2EF76BD0-9579-4300-BFEB-C18E64CF9FF1}
 	EndGlobalSection
 EndGlobal
