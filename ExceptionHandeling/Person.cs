@@ -1,51 +1,43 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ExceptionHandeling
 {
-	class Person
+	internal class Person
 	{
-		#region Attributes
-		String personName;
-		Int32 personAge;
-		#endregion
-
 		#region Properties
-		public Int32 PersonAge
+
+		#region Age
+		int age;
+		public int Age
 		{
-			get { return personAge; }
+			get { return age; }
 			set
 			{
 				if (value < 0 || value > 150)
 					throw new InvalidAgeException(value);
-				else
-					value = personAge;
+				age = value;
 			}
 		}
-
-		public String PersonName
-		{
-			get { return personName; }
-			set { personName = value; }
-		}
-
 		#endregion
 
-		public Person(String personName, Int32 personAge)
-		{
-			this.personAge = personAge; this.personName = personName;
+		#region Name
+		private string _name;
+		public string Name {
+			get { return _name; }
+			set
+			{
+				if(string.IsNullOrWhiteSpace(value))
+					throw new ArgumentException("The name cannot be empty!");
+				_name = value;
+			}
 		}
-
-		#region IComparable Members
-
-		/*public int CompareTo(Object obj)
-		{
-			return this.personAge.CompareTo(((Person)obj).personAge);
-		}*/
-
 		#endregion
+		#endregion
+
+		public Person(string name, int age)
+		{
+			this.age = age;
+			Name = name;
+		}
 	}
 }

@@ -28,7 +28,7 @@ namespace EnumStructClass
 		}
 
 		//Readonly property
-		public string Name2
+		public string NameRO
 		{
 			get { return _name; }
 		}

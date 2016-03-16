@@ -44,6 +44,18 @@ namespace Operators
 		{
 			return p1.Age > p2.Age;
 		}
+
+		public static Person operator ++(Person p)
+		{
+			p.Age++;
+			return p;
+		}
+
+		public static Person operator +(Person p, int years)
+		{
+			p.Age += years;
+			return p;
+		}
 		#endregion
 	}
 }

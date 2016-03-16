@@ -34,10 +34,10 @@ namespace EnumStructClass
 			Console.WriteLine(personClass1); // automatically calls .ToString(). The method is defined in System.Object and overridden in PersonClass
 			Console.WriteLine(personClass2);
 
-			// Change personClass1.Name and print again. personClass2.Name has changed.
+			// Change personClass1.Name and _age and print again. personClass2.Name and _age have changed.
 			personClass1.Name = "NewUserName";
 			personClass1.SetAge(22);
-			Console.WriteLine("\n=> Changed userAccountStruct1.Name\n");
+			Console.WriteLine("\n=> Changed personClass1.Name and personClass1._age\n");
 			Console.WriteLine(personClass1);
 			Console.WriteLine(personClass2);
 		}

@@ -1,15 +1,12 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Collections
 {
-	class Program
+	internal class Program
 	{
-		static void Main(string[] args)
+		private static void Main()
 		{
 		}
 
@@ -25,19 +22,28 @@ namespace Collections
 
 		static void ListExample()
 		{
-			var words = new List<string>(); // New string-typed list
+			// New string-typed list
+			var words = new List<string>();
 			words.Add("melon");
 			words.Add("avocado");
 			words.AddRange(new[] { "banana", "plum" });
-			words.Insert(0, "lemon"); // Insert at start
-			words.InsertRange(0, new[] { "peach", "nashi" }); // Insert at start
+			
+			// Insert at start
+			words.Insert(0, "lemon"); 
+			
+			// Insert at start
+			words.InsertRange(0, new[] { "peach", "nashi" }); 
 			words.Remove("melon");
-			words.RemoveAt(3); // Remove the 4th element
-			words.RemoveRange(0, 2); // Remove first 2 elements
-									 // Remove all strings starting in 'n':
+			
+			// Remove the 4th element
+			words.RemoveAt(3); 
+			
+			// Remove first 2 elements
+			words.RemoveRange(0, 2);
+			
+			// Remove all strings starting in 'n':
 			words.RemoveAll(x => x.StartsWith("n"));
-
-
+			
 			for (var i=0; i<words.Count; i++)
 			{
 				Console.WriteLine(words[i]);
@@ -47,6 +53,30 @@ namespace Collections
 			{
 				Console.WriteLine(word);
 			}
+		}
+
+		static void ListPersonExample()
+		{
+			var personList = new ArrayList();
+
+			var rnd = new Random();
+			for (var i = 0; i < 10; i++)
+			{
+				personList.Add(new Person("Persoana " + i, rnd.Next(100)));
+			}
+
+			//Which interface is needed for Array.Sort(personList)
+
+			foreach (Person p in personList)
+				Console.WriteLine(p);
+		}
+
+		static void PersonCollectionExample()
+		{
+			var personList = new PersonCollection();
+
+			foreach (var p in personList)
+				Console.WriteLine(p);
 		}
 	}
 }
