@@ -8,9 +8,12 @@ namespace Collections
 	{
 		private static void Main()
 		{
+			//ArrayListExample();
+			//ListExample();
+			ListPersonExample();
 		}
 
-		static void ArrayList()
+		private static void ArrayListExample()
 		{
 			var words = new ArrayList();
 			words.Add("melon");
@@ -20,7 +23,7 @@ namespace Collections
 			//int first = (int)words[0];
 		}
 
-		static void ListExample()
+		private static void ListExample()
 		{
 			// New string-typed list
 			var words = new List<string>();
@@ -55,9 +58,9 @@ namespace Collections
 			}
 		}
 
-		static void ListPersonExample()
+		private static void ListPersonExample()
 		{
-			var personList = new ArrayList();
+			var personList = new List<Person>();
 
 			var rnd = new Random();
 			for (var i = 0; i < 10; i++)
@@ -67,15 +70,7 @@ namespace Collections
 
 			//Which interface is needed for Array.Sort(personList)
 
-			foreach (Person p in personList)
-				Console.WriteLine(p);
-		}
-
-		static void PersonCollectionExample()
-		{
-			var personList = new PersonCollection();
-
-			foreach (var p in personList)
+			foreach (Person p in personList) //equivalent to foreach (var p in personList)
 				Console.WriteLine(p);
 		}
 	}

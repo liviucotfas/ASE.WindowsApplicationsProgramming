@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 
-namespace Collections
+namespace CustomCollections
 {
 	internal class PersonCollection :IEnumerable<Person>
 	{
@@ -28,11 +27,10 @@ namespace Collections
 				new Person("name3", 3)
 			};
 		}
-
-
+		
 		public IEnumerator<Person> GetEnumerator()
 		{
-			return new PersonEnumerator();
+			return new PersonEnumerator(this);
 		}
 
 		IEnumerator IEnumerable.GetEnumerator()
@@ -46,12 +44,7 @@ namespace Collections
 		private int _nIndex;
 		private PersonCollection _personCollection;
 
-		public PersonEnumerator()
-		{
-			
-		}
-
-		public void Dispose(PersonCollection personCollection)
+		public PersonEnumerator(PersonCollection personCollection)
 		{
 			_personCollection = personCollection;
 			_nIndex = -1;
@@ -80,8 +73,7 @@ namespace Collections
 
 		public void Dispose()
 		{
-			//TODO
-			throw new NotImplementedException();
+			
 		}
 	}
 }
