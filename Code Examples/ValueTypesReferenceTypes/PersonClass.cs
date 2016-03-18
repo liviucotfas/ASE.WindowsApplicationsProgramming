@@ -57,11 +57,11 @@ namespace EnumStructClass
 		{
 			Console.WriteLine("Copy Constructor");
 		}
-		
-		//Destructor
+
+		//Finalizer
 		~PersonClass()
 		{
-			Console.WriteLine("Destructor");
+			Console.WriteLine("Finalizer");
 		}
 
 		public override string ToString()

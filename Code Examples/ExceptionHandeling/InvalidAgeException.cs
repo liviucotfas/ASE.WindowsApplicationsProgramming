@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace ExceptionHandeling
+namespace ExceptionHandling
 {
 	public class InvalidAgeException : Exception
 	{
-		Int32 Age { get; set; }
+		public int Age { get; set; }
 
-		public InvalidAgeException(Int32 age)
+		public InvalidAgeException(int age)
 		{
 			Age = age;
 		}

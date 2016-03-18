@@ -9,6 +9,7 @@ namespace Collections
 		private static void Main()
 		{
 			//ArrayListExample();
+			//ListExample();
 			ListPersonExample();
 		}
 

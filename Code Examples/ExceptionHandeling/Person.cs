@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ExceptionHandeling
+namespace ExceptionHandling
 {
 	internal class Person
 	{
