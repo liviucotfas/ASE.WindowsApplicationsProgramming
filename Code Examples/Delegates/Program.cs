@@ -19,10 +19,12 @@ namespace DelegatesEvents
 		private static void Main()
 		{
 			Console.WriteLine("***** Delegate Example *****\n");
+			
 			//Definire si instantiere delegat
 			BinaryOp b = new BinaryOp(SimpleMath.Add);
 			//BinaryOp b = new BinaryOp(SimpleMath.Subtract));
 			//b += new BinaryOp(SimpleMath.Subtract);
+			
 			//Apel prin delegat
 			Console.WriteLine("10 + 10 is {0}", b(10, 10));
 			Console.ReadLine();

@@ -7,6 +7,7 @@ namespace CustomCollections
 	{
 		private Person[] _personArray;
 
+		//Indexer
 		public Person this[int index]
 		{
 			get { return _personArray[index]; }

@@ -70,7 +70,7 @@ namespace Collections
 
 			//Which interface is needed for Array.Sort(personList)
 
-			foreach (Person p in personList) //equivalent to foreach (var p in personList)
+			foreach (var p in personList) //equivalent to foreach (var p in personList)
 				Console.WriteLine(p);
 		}
 	}
