@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{995832A2-5ECA-4A9E-910C-A14FCC04E2CD}</ProjectGuid>
+    <ProjectGuid>{F99E8976-7006-42C9-A803-4FCBD3476578}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DataBaseDataSetSQLServer</RootNamespace>
