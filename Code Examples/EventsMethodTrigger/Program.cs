@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace Events
+namespace EventsMethodTrigger
 {
     public delegate void TemperatureReading(double temperature);
 

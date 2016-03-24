@@ -20,7 +20,7 @@ namespace Collections
 			words.Add("avocado");
 			string first = (string)words[0];
 
-			//int first = (int)words[0];
+			//int first = (int)words[0]; // throws an exception
 		}
 
 		private static void ListExample()
