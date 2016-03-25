@@ -7,12 +7,13 @@ namespace SimpleWebBrowser
 {
 	public partial class MainForm : Form
 	{
+		// Constructor
 		public MainForm()
 		{
 			InitializeComponent();
 		}
 
-		private void Form1_Load(object sender, EventArgs e)
+		private void MainForm_Load(object sender, EventArgs e)
 		{
 			this.Text = "MyWebBrowser";
 			this.Size = new Size(600, 400);

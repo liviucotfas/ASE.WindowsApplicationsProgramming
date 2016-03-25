@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 
-namespace Seminar5
+namespace SerializableCustomCollectionEvents
 {
 	//http://msdn.microsoft.com/en-us/library/system.collections.ienumerator.aspx
 	//http://www.codeproject.com/KB/cs/csenumerators.aspx
