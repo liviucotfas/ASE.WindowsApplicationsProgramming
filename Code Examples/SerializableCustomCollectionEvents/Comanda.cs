@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Seminar5
+namespace SerializableCustomCollectionEvents
 {
     [Serializable]
     public class Comanda

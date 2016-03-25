@@ -1,10 +1,11 @@
 using System;
 using System.Globalization;
-using System.Windows.Forms;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Windows.Forms;
+using Seminar5;
 
-namespace Seminar5
+namespace SerializableCustomCollectionEvents
 {
 	public partial class BonComanda : Form
 	{
@@ -44,7 +45,7 @@ namespace Seminar5
 
 		private void BtnDeleteClick(object sender, EventArgs e)
 		{
-			if (lvComenzi.SelectedItems.Count != 1)
+			if (lvComenzi.SelectedItems.Count == 1)
 			{
 				ModelAplicatie.Comenzi.Sterge((Comanda)lvComenzi.SelectedItems[0].Tag);
 			}
@@ -56,7 +57,7 @@ namespace Seminar5
 
 		private void BtnEditClick(object sender, EventArgs e)
 		{
-			if (lvComenzi.SelectedItems.Count != 1)
+			if (lvComenzi.SelectedItems.Count == 1)
 			{
 				new Editare((Comanda)lvComenzi.SelectedItems[0].Tag).ShowDialog();
 			}

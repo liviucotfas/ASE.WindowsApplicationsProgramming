@@ -207,7 +207,7 @@
 			this.MainMenuStrip = this.msMain;
 			this.Name = "MainForm";
 			this.Text = "Form1";
-			this.Load += new System.EventHandler(this.Form1_Load);
+			this.Load += new System.EventHandler(this.MainForm_Load);
 			this.tsNavigation.ResumeLayout(false);
 			this.tsNavigation.PerformLayout();
 			this.statusStrip1.ResumeLayout(false);
