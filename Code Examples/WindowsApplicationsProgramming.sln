@@ -7,9 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strings", "Strings\Strings.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StandardInterfaces", "Interfaces\StandardInterfaces.csproj", "{271CA868-5BEC-4540-B462-FFA77087F4D9}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. NET Framework Basics", "1. NET Framework Basics", "{80D947C5-D1E9-4814-BD59-2E49DF41D524}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. NET Framework Basics", "01. NET Framework Basics", "{80D947C5-D1E9-4814-BD59-2E49DF41D524}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Creating Types", "2. Creating Types", "{E3FBE13A-79C0-4694-BF7C-1B8AEC22A973}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. Creating Types", "02. Creating Types", "{E3FBE13A-79C0-4694-BF7C-1B8AEC22A973}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumStructClass", "ValueTypesReferenceTypes\EnumStructClass.csproj", "{75373F0C-B06E-41BE-BE65-96BF8B82A264}"
 EndProject
@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays", "Array\Arrays.cspr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "ConstructorDestructor\Inheritance.csproj", "{EF011870-ADD9-496C-B977-6DACE8F89447}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Collections", "3. Collections", "{2EF76BD0-9579-4300-BFEB-C18E64CF9FF1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. Collections", "03. Collections", "{2EF76BD0-9579-4300-BFEB-C18E64CF9FF1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StandardCollections", "StandardCollections\StandardCollections.csproj", "{A0469F13-0753-41C3-B67B-CA76758D9A23}"
 EndProject
@@ -27,13 +27,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandling", "Except
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoxingUnboxing", "BoxingUnboxing\BoxingUnboxing.csproj", "{918F2EA2-98DB-4342-BD47-1EFBCB7EE56B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6. Windows Forms - Examples", "6. Windows Forms - Examples", "{A768DE76-513E-401C-A677-501E4BBA480E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06. Windows Forms - Examples", "06. Windows Forms - Examples", "{A768DE76-513E-401C-A677-501E4BBA480E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Operators", "Operators\Operators.csproj", "{D9184C02-2ADA-42F2-86D3-70836754205D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomCollections", "CustomCollections\CustomCollections.csproj", "{0F018367-20E1-4AF9-BEF9-C21AB4C9D838}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Exceptions and Garbage Collection", "5. Exceptions and Garbage Collection", "{B5BE6112-E379-4ECB-BBCF-5621565863FC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05. Exceptions and Garbage Collection", "05. Exceptions and Garbage Collection", "{B5BE6112-E379-4ECB-BBCF-5621565863FC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "Delegates\Delegates.csproj", "{CA750478-FC5F-4979-807B-B6D6EF362219}"
 EndProject
@@ -49,7 +49,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWebBrowser", "SimpleW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsMethodTrigger", "EventsMethodTrigger\EventsMethodTrigger.csproj", "{43903ED6-420A-476C-B154-63E4A31CB9A4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Delegates and EVents", "4. Delegates and EVents", "{868F8BD1-089A-4E76-BDEC-365F89CDB984}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04. Delegates and EVents", "04. Delegates and EVents", "{868F8BD1-089A-4E76-BDEC-365F89CDB984}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsPropertyTrigger", "EventsPropertyTrigger\EventsPropertyTrigger.csproj", "{D5449275-9B77-4543-A398-BC1568C9999D}"
 EndProject
@@ -69,7 +69,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializableCustomCollectio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodParameters", "MethodParameters\MethodParameters.csproj", "{7F11E547-3A0E-4B67-BF3A-87658CD4D230}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "9. Windows Forms Controls", "9. Windows Forms Controls", "{718D2BE5-3500-483F-BC23-FD1336336134}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09. Windows Forms Controls", "09. Windows Forms Controls", "{718D2BE5-3500-483F-BC23-FD1336336134}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCalculator", "SimpleCalculator\SimpleCalculator.csproj", "{B7D5F54B-FF43-44B0-8775-5DD0DCC03E3C}"
 EndProject
@@ -77,9 +77,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyEvents", "KeyEVents\KeyE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MouseEvents", "MouseEvents\MouseEvents.csproj", "{1DAC53A2-16C7-4DA9-806D-75279DA9F91E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7. Windows Forms - Key, Mouse Events", "7. Windows Forms - Key, Mouse Events", "{9DA02F82-AD1C-4834-8C96-2836B80B1ECD}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07. Windows Forms - Key, Mouse Events", "07. Windows Forms - Key, Mouse Events", "{9DA02F82-AD1C-4834-8C96-2836B80B1ECD}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "8. Windows Forms", "8. Windows Forms", "{E88FB65B-BFCB-437C-BF9E-690FBF664FBC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08. Windows Forms", "08. Windows Forms", "{E88FB65B-BFCB-437C-BF9E-690FBF664FBC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyEventsNumericTextBox", "KeyEventsNumericTextBox\KeyEventsNumericTextBox.csproj", "{7DCB57BF-028E-4722-8E1C-A5ED0D4B07A5}"
 EndProject
