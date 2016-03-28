@@ -4,31 +4,22 @@ namespace ConstructorDestructor.Entities
 {
 	internal abstract class Employee : Person
 	{
-		// A static point of data.
-		private static double bonusRate = 1.1;
-		// A static property.
-		public static double BonusRate
+		#region Normal/Virtual/Abstract Methods
+		public void PrintWageNormal()
 		{
-			get { return bonusRate; }
-			set { bonusRate = value; }
+			Console.WriteLine("Employee - PrintWageNormal");
 		}
 
-		public double Wage { get; set; }
-
-
-		//Abstract method
-		public abstract double CalculateBonusAbstract();
-
-		public double CalculateBonusNormal()
+		public virtual void PrintWageVirtual()
 		{
-			Console.WriteLine("Employee - CalculateBonusNormal");
-			return bonusRate * Wage;
+			Console.WriteLine("Employee - PrintWageVirtual");
 		}
 
-		public virtual double CalculateBonusVirtual()
+		public abstract void PrintWageAbstract();
+		#endregion
+
+		public Employee(string name) : base(name)
 		{
-			Console.WriteLine("Employee - CalculateBonusVirtual");
-			return bonusRate * Wage;
 		}
 	}
 }

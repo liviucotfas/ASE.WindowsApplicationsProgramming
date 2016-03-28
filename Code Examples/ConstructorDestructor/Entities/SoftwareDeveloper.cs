@@ -1,32 +1,37 @@
 ﻿using System;
+using System.Linq;
 
 namespace ConstructorDestructor.Entities
 {
-	internal class SoftwareDeveloper : Employee
+	internal class SoftwareDeveloper : Employee, IKnownProgrammingLanguages
 	{
-		private static double bonusRate = 1.2;
-
-		public SoftwareDeveloper(double wage)
+		#region Normal/Virtual/Abstract Methods
+		public new void PrintWageNormal()
 		{
-			Wage = wage;
+			Console.WriteLine("SoftwareDeveloper - PrintWageNormal");
 		}
 
-		public override double CalculateBonusAbstract()
+		public override void PrintWageVirtual()
 		{
-			Console.WriteLine("SoftwareDeveloper - CalculateBonusAbstract");
-			return bonusRate * Wage;
+			Console.WriteLine("SoftwareDeveloper - CalculateBonusVirtual");
 		}
 
-		public new double CalculateBonusNormal()
+		public override void PrintWageAbstract()
 		{
-			Console.WriteLine("SoftwareDeveloper - CalculateBonusNormal");
-			return bonusRate * Wage;
+			Console.WriteLine("SoftwareDeveloper - PrintWageAbstract");
 		}
+		#endregion
 
-		public override double CalculateBonusVirtual()
+		#region IKnownProgrammingLanguages
+		public string[] KnownProgrammingLanguages { get; set; }
+		public bool Knows(string language)
 		{
-			Console.WriteLine("Employee - CalculateBonusVirtual");
-			return bonusRate * Wage;
+			return KnownProgrammingLanguages.Contains(language);
+		}
+		#endregion
+
+		public SoftwareDeveloper(string name) : base(name)
+		{
 		}
 	}
 }
