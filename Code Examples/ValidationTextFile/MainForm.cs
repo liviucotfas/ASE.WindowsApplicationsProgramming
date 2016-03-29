@@ -1,10 +1,10 @@
 using System;
 using System.ComponentModel;
 using System.Globalization;
-using System.Windows.Forms;
 using System.IO;
+using System.Windows.Forms;
 
-namespace Seminar5
+namespace ValidationTextFile
 {
 	public partial class MainForm : Form
 	{
@@ -30,10 +30,10 @@ namespace Seminar5
 		#endregion
 
 		#region Events
-		private void Form1_Load(object sender, EventArgs e)
+		private void MainForm_Load(object sender, EventArgs e)
 		{
 			tbData.Text = DateTime.Now.ToString("dd/MM/yyyy");
-			tbOra.Text = DateTime.Now.Hour + ":" + DateTime.Now.Minute;
+			tbOra.Text =  string.Format("{0}: {1}", DateTime.Now.Hour, DateTime.Now.Minute);
 		}
 
 		private void btnCuloare_Click(object sender, EventArgs e)

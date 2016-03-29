@@ -68,12 +68,13 @@
 			// 
 			// btnCalculate
 			// 
+			this.btnCalculate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
 			this.btnCalculate.Location = new System.Drawing.Point(75, 113);
 			this.btnCalculate.Name = "btnCalculate";
 			this.btnCalculate.Size = new System.Drawing.Size(75, 23);
 			this.btnCalculate.TabIndex = 4;
 			this.btnCalculate.Text = "=";
-			this.btnCalculate.UseVisualStyleBackColor = true;
+			this.btnCalculate.UseVisualStyleBackColor = false;
 			this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
 			// 
 			// MainForm
@@ -87,7 +88,7 @@
 			this.Controls.Add(this.tbValue2);
 			this.Controls.Add(this.tbValue1);
 			this.Name = "MainForm";
-			this.Text = "SimpleCalculator";
+			this.Text = "Simple Calculator";
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
