@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace CustomCollections
 {
@@ -7,11 +8,17 @@ namespace CustomCollections
 	{
 		private Person[] _personArray;
 
-		//Indexer
+		//Indexer [int]
 		public Person this[int index]
 		{
 			get { return _personArray[index]; }
 			set { _personArray[index] = value; }
+		}
+
+		//Indexer [string]
+		public Person this[string name]
+		{
+			get { return _personArray.FirstOrDefault(x=>x.Name == name); }
 		}
 
 		public int Length
