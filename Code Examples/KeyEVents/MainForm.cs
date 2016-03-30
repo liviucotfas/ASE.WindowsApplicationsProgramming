@@ -15,9 +15,9 @@ namespace KeyEVents
 		{
 			txtMsg.AppendText(str + " event." + "\r\n");
 			txtMsg.AppendText("\t" + "KeyCode name: " + e.KeyCode + "\r\n");
-			txtMsg.AppendText("\t" + "KeyCode key code: " + ((int)e.KeyCode) +"\r\n");
+			txtMsg.AppendText("\t" + "KeyCode key code: " + (int)e.KeyCode +"\r\n");
 			txtMsg.AppendText("\t" + "KeyData name: " + e.KeyData + "\r\n");
-			txtMsg.AppendText("\t" + "KeyData key code: " + ((int)e.KeyData) +"\r\n");
+			txtMsg.AppendText("\t" + "KeyData key code: " + (int)e.KeyData +"\r\n");
 			txtMsg.AppendText("\t" + "KeyValue: " + e.KeyValue + "\r\n");
 			txtMsg.AppendText("\t" + "Handled: " + e.Handled + "\r\n");
 			txtMsg.AppendText("\r\n");
