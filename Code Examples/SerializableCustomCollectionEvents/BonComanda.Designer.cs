@@ -66,48 +66,43 @@ namespace SerializableCustomCollectionEvents
 			this.lblTitlu.AutoSize = true;
 			this.lblTitlu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblTitlu.ForeColor = System.Drawing.Color.DarkRed;
-			this.lblTitlu.Location = new System.Drawing.Point(12, 18);
-			this.lblTitlu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.lblTitlu.Location = new System.Drawing.Point(9, 15);
 			this.lblTitlu.Name = "lblTitlu";
-			this.lblTitlu.Size = new System.Drawing.Size(236, 20);
+			this.lblTitlu.Size = new System.Drawing.Size(203, 17);
 			this.lblTitlu.TabIndex = 0;
 			this.lblTitlu.Text = "Bon comanda- Dealer Auto";
 			// 
 			// tbData
 			// 
-			this.tbData.Location = new System.Drawing.Point(507, 18);
-			this.tbData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.tbData.Location = new System.Drawing.Point(380, 15);
 			this.tbData.Name = "tbData";
 			this.tbData.ReadOnly = true;
-			this.tbData.Size = new System.Drawing.Size(115, 22);
+			this.tbData.Size = new System.Drawing.Size(87, 20);
 			this.tbData.TabIndex = 11;
 			// 
 			// tbOra
 			// 
-			this.tbOra.Location = new System.Drawing.Point(676, 18);
-			this.tbOra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.tbOra.Location = new System.Drawing.Point(507, 15);
 			this.tbOra.Name = "tbOra";
 			this.tbOra.ReadOnly = true;
-			this.tbOra.Size = new System.Drawing.Size(115, 22);
+			this.tbOra.Size = new System.Drawing.Size(87, 20);
 			this.tbOra.TabIndex = 12;
 			// 
 			// lblData
 			// 
 			this.lblData.AutoSize = true;
-			this.lblData.Location = new System.Drawing.Point(463, 23);
-			this.lblData.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.lblData.Location = new System.Drawing.Point(347, 19);
 			this.lblData.Name = "lblData";
-			this.lblData.Size = new System.Drawing.Size(38, 17);
+			this.lblData.Size = new System.Drawing.Size(30, 13);
 			this.lblData.TabIndex = 13;
 			this.lblData.Text = "Data";
 			// 
 			// lblOra
 			// 
 			this.lblOra.AutoSize = true;
-			this.lblOra.Location = new System.Drawing.Point(640, 23);
-			this.lblOra.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.lblOra.Location = new System.Drawing.Point(480, 19);
 			this.lblOra.Name = "lblOra";
-			this.lblOra.Size = new System.Drawing.Size(32, 17);
+			this.lblOra.Size = new System.Drawing.Size(24, 13);
 			this.lblOra.TabIndex = 14;
 			this.lblOra.Text = "Ora";
 			// 
@@ -119,11 +114,10 @@ namespace SerializableCustomCollectionEvents
 			// 
 			this.tabControl.Controls.Add(this.tabPage1);
 			this.tabControl.Controls.Add(this.tpVizComenzi);
-			this.tabControl.Location = new System.Drawing.Point(16, 50);
-			this.tabControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.tabControl.Location = new System.Drawing.Point(12, 41);
 			this.tabControl.Name = "tabControl";
 			this.tabControl.SelectedIndex = 0;
-			this.tabControl.Size = new System.Drawing.Size(831, 250);
+			this.tabControl.Size = new System.Drawing.Size(623, 203);
 			this.tabControl.TabIndex = 27;
 			// 
 			// tabPage1
@@ -137,11 +131,10 @@ namespace SerializableCustomCollectionEvents
 			this.tabPage1.Controls.Add(this.lblPren);
 			this.tabPage1.Controls.Add(this.tbNume);
 			this.tabPage1.Controls.Add(this.lblNume);
-			this.tabPage1.Location = new System.Drawing.Point(4, 25);
-			this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.tabPage1.Location = new System.Drawing.Point(4, 22);
 			this.tabPage1.Name = "tabPage1";
-			this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-			this.tabPage1.Size = new System.Drawing.Size(823, 221);
+			this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+			this.tabPage1.Size = new System.Drawing.Size(615, 177);
 			this.tabPage1.TabIndex = 0;
 			this.tabPage1.Text = "Adauga Comanda";
 			this.tabPage1.UseVisualStyleBackColor = true;
@@ -149,10 +142,9 @@ namespace SerializableCustomCollectionEvents
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(579, 57);
-			this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label1.Location = new System.Drawing.Point(434, 46);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(126, 17);
+			this.label1.Size = new System.Drawing.Size(95, 13);
 			this.label1.TabIndex = 43;
 			this.label1.Text = "Numar de comenzi";
 			// 
@@ -161,19 +153,17 @@ namespace SerializableCustomCollectionEvents
 			this.lbNrComenzi.AutoSize = true;
 			this.lbNrComenzi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
 			this.lbNrComenzi.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbNrComenzi.Location = new System.Drawing.Point(568, 74);
-			this.lbNrComenzi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.lbNrComenzi.Location = new System.Drawing.Point(426, 60);
 			this.lbNrComenzi.Name = "lbNrComenzi";
-			this.lbNrComenzi.Size = new System.Drawing.Size(155, 52);
+			this.lbNrComenzi.Size = new System.Drawing.Size(116, 39);
 			this.lbNrComenzi.TabIndex = 42;
 			this.lbNrComenzi.Text = "           ";
 			// 
 			// btnSalvare
 			// 
-			this.btnSalvare.Location = new System.Drawing.Point(271, 161);
-			this.btnSalvare.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.btnSalvare.Location = new System.Drawing.Point(203, 131);
 			this.btnSalvare.Name = "btnSalvare";
-			this.btnSalvare.Size = new System.Drawing.Size(100, 28);
+			this.btnSalvare.Size = new System.Drawing.Size(75, 23);
 			this.btnSalvare.TabIndex = 41;
 			this.btnSalvare.Text = "Adauga";
 			this.btnSalvare.UseVisualStyleBackColor = true;
@@ -190,56 +180,50 @@ namespace SerializableCustomCollectionEvents
             "Lada",
             "Mercedes",
             "Skoda"});
-			this.cbMasina.Location = new System.Drawing.Point(104, 116);
-			this.cbMasina.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cbMasina.Location = new System.Drawing.Point(78, 94);
 			this.cbMasina.Name = "cbMasina";
-			this.cbMasina.Size = new System.Drawing.Size(265, 24);
+			this.cbMasina.Size = new System.Drawing.Size(200, 21);
 			this.cbMasina.Sorted = true;
 			this.cbMasina.TabIndex = 39;
 			// 
 			// lblMasina
 			// 
 			this.lblMasina.AutoSize = true;
-			this.lblMasina.Location = new System.Drawing.Point(31, 121);
-			this.lblMasina.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.lblMasina.Location = new System.Drawing.Point(23, 98);
 			this.lblMasina.Name = "lblMasina";
-			this.lblMasina.Size = new System.Drawing.Size(57, 17);
+			this.lblMasina.Size = new System.Drawing.Size(44, 13);
 			this.lblMasina.TabIndex = 38;
 			this.lblMasina.Text = "Masina:";
 			// 
 			// tbPrenume
 			// 
-			this.tbPrenume.Location = new System.Drawing.Point(104, 74);
-			this.tbPrenume.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.tbPrenume.Location = new System.Drawing.Point(78, 60);
 			this.tbPrenume.Name = "tbPrenume";
-			this.tbPrenume.Size = new System.Drawing.Size(265, 22);
+			this.tbPrenume.Size = new System.Drawing.Size(200, 20);
 			this.tbPrenume.TabIndex = 30;
 			// 
 			// lblPren
 			// 
 			this.lblPren.AutoSize = true;
-			this.lblPren.Location = new System.Drawing.Point(31, 79);
-			this.lblPren.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.lblPren.Location = new System.Drawing.Point(23, 64);
 			this.lblPren.Name = "lblPren";
-			this.lblPren.Size = new System.Drawing.Size(69, 17);
+			this.lblPren.Size = new System.Drawing.Size(52, 13);
 			this.lblPren.TabIndex = 29;
 			this.lblPren.Text = "Prenume:";
 			// 
 			// tbNume
 			// 
-			this.tbNume.Location = new System.Drawing.Point(104, 33);
-			this.tbNume.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.tbNume.Location = new System.Drawing.Point(78, 27);
 			this.tbNume.Name = "tbNume";
-			this.tbNume.Size = new System.Drawing.Size(265, 22);
+			this.tbNume.Size = new System.Drawing.Size(200, 20);
 			this.tbNume.TabIndex = 28;
 			// 
 			// lblNume
 			// 
 			this.lblNume.AutoSize = true;
-			this.lblNume.Location = new System.Drawing.Point(31, 38);
-			this.lblNume.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.lblNume.Location = new System.Drawing.Point(23, 31);
 			this.lblNume.Name = "lblNume";
-			this.lblNume.Size = new System.Drawing.Size(49, 17);
+			this.lblNume.Size = new System.Drawing.Size(38, 13);
 			this.lblNume.TabIndex = 27;
 			this.lblNume.Text = "Nume:";
 			// 
@@ -250,21 +234,19 @@ namespace SerializableCustomCollectionEvents
 			this.tpVizComenzi.Controls.Add(this.btnDelete);
 			this.tpVizComenzi.Controls.Add(this.btnEdit);
 			this.tpVizComenzi.Controls.Add(this.lvComenzi);
-			this.tpVizComenzi.Location = new System.Drawing.Point(4, 25);
-			this.tpVizComenzi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.tpVizComenzi.Location = new System.Drawing.Point(4, 22);
 			this.tpVizComenzi.Name = "tpVizComenzi";
-			this.tpVizComenzi.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-			this.tpVizComenzi.Size = new System.Drawing.Size(823, 221);
+			this.tpVizComenzi.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+			this.tpVizComenzi.Size = new System.Drawing.Size(615, 177);
 			this.tpVizComenzi.TabIndex = 1;
 			this.tpVizComenzi.Text = "Vizalizare comenzi";
 			this.tpVizComenzi.UseVisualStyleBackColor = true;
 			// 
 			// btnRestaureaza
 			// 
-			this.btnRestaureaza.Location = new System.Drawing.Point(708, 177);
-			this.btnRestaureaza.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.btnRestaureaza.Location = new System.Drawing.Point(531, 144);
 			this.btnRestaureaza.Name = "btnRestaureaza";
-			this.btnRestaureaza.Size = new System.Drawing.Size(100, 28);
+			this.btnRestaureaza.Size = new System.Drawing.Size(75, 23);
 			this.btnRestaureaza.TabIndex = 4;
 			this.btnRestaureaza.Text = "Restaureaza";
 			this.btnRestaureaza.UseVisualStyleBackColor = true;
@@ -272,10 +254,9 @@ namespace SerializableCustomCollectionEvents
 			// 
 			// btnSalveaza
 			// 
-			this.btnSalveaza.Location = new System.Drawing.Point(708, 139);
-			this.btnSalveaza.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.btnSalveaza.Location = new System.Drawing.Point(531, 113);
 			this.btnSalveaza.Name = "btnSalveaza";
-			this.btnSalveaza.Size = new System.Drawing.Size(100, 28);
+			this.btnSalveaza.Size = new System.Drawing.Size(75, 23);
 			this.btnSalveaza.TabIndex = 3;
 			this.btnSalveaza.Text = "Salveaza";
 			this.btnSalveaza.UseVisualStyleBackColor = true;
@@ -283,10 +264,9 @@ namespace SerializableCustomCollectionEvents
 			// 
 			// btnDelete
 			// 
-			this.btnDelete.Location = new System.Drawing.Point(708, 53);
-			this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.btnDelete.Location = new System.Drawing.Point(531, 43);
 			this.btnDelete.Name = "btnDelete";
-			this.btnDelete.Size = new System.Drawing.Size(100, 28);
+			this.btnDelete.Size = new System.Drawing.Size(75, 23);
 			this.btnDelete.TabIndex = 2;
 			this.btnDelete.Text = "Delete";
 			this.btnDelete.UseVisualStyleBackColor = true;
@@ -294,10 +274,9 @@ namespace SerializableCustomCollectionEvents
 			// 
 			// btnEdit
 			// 
-			this.btnEdit.Location = new System.Drawing.Point(708, 17);
-			this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.btnEdit.Location = new System.Drawing.Point(531, 14);
 			this.btnEdit.Name = "btnEdit";
-			this.btnEdit.Size = new System.Drawing.Size(100, 28);
+			this.btnEdit.Size = new System.Drawing.Size(75, 23);
 			this.btnEdit.TabIndex = 1;
 			this.btnEdit.Text = "Edit";
 			this.btnEdit.UseVisualStyleBackColor = true;
@@ -309,10 +288,9 @@ namespace SerializableCustomCollectionEvents
             this.chNume,
             this.chPrenume,
             this.chMasina});
-			this.lvComenzi.Location = new System.Drawing.Point(4, 4);
-			this.lvComenzi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.lvComenzi.Location = new System.Drawing.Point(3, 3);
 			this.lvComenzi.Name = "lvComenzi";
-			this.lvComenzi.Size = new System.Drawing.Size(689, 210);
+			this.lvComenzi.Size = new System.Drawing.Size(518, 171);
 			this.lvComenzi.TabIndex = 0;
 			this.lvComenzi.UseCompatibleStateImageBehavior = false;
 			this.lvComenzi.View = System.Windows.Forms.View.Details;
@@ -331,17 +309,16 @@ namespace SerializableCustomCollectionEvents
 			// 
 			// BonComanda
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.CausesValidation = false;
-			this.ClientSize = new System.Drawing.Size(857, 314);
+			this.ClientSize = new System.Drawing.Size(643, 261);
 			this.Controls.Add(this.tabControl);
 			this.Controls.Add(this.lblOra);
 			this.Controls.Add(this.lblData);
 			this.Controls.Add(this.tbOra);
 			this.Controls.Add(this.tbData);
 			this.Controls.Add(this.lblTitlu);
-			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.Name = "BonComanda";
 			this.Text = "Bon de comanda";
 			this.Load += new System.EventHandler(this.Form1Load);

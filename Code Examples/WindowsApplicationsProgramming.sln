@@ -27,7 +27,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandling", "Except
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoxingUnboxing", "BoxingUnboxing\BoxingUnboxing.csproj", "{918F2EA2-98DB-4342-BD47-1EFBCB7EE56B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06. Windows Forms - Examples", "06. Windows Forms - Examples", "{A768DE76-513E-401C-A677-501E4BBA480E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06. Windows Forms - Simple Examples", "06. Windows Forms - Simple Examples", "{A768DE76-513E-401C-A677-501E4BBA480E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Operators", "Operators\Operators.csproj", "{D9184C02-2ADA-42F2-86D3-70836754205D}"
 EndProject
@@ -37,7 +37,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05. Exceptions and Garbage 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "Delegates\Delegates.csproj", "{CA750478-FC5F-4979-807B-B6D6EF362219}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "11. Globalization", "11. Globalization", "{74C5D6A4-483F-4925-AE17-ED20131DE41C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "12. Globalization", "12. Globalization", "{74C5D6A4-483F-4925-AE17-ED20131DE41C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Globalization", "Globalization\Globalization.csproj", "{389A84C9-024A-4F5C-B6D5-290FA6C3A05A}"
 EndProject
@@ -55,7 +55,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsPropertyTrigger", "Ev
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsPropertyTriggerEventArgs", "EventsPropertyTriggerEventArgs\EventsPropertyTriggerEventArgs.csproj", "{359B7CBB-CDE6-403E-8EA4-F6EC7F51E2EF}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10. DataBase", "10. DataBase", "{A8F9A7BF-5AF8-4C23-A99D-6737FCAE4F2B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "11. DataBase", "11. DataBase", "{A8F9A7BF-5AF8-4C23-A99D-6737FCAE4F2B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBaseSQLCommand", "DataBaseSQLCommand\DataBaseSQLCommand.csproj", "{5175D0A8-9C62-43B9-B760-E9941F61A6F4}"
 EndProject
@@ -69,11 +69,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializableCustomCollectio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodParameters", "MethodParameters\MethodParameters.csproj", "{7F11E547-3A0E-4B67-BF3A-87658CD4D230}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09. Windows Forms Controls", "09. Windows Forms Controls", "{718D2BE5-3500-483F-BC23-FD1336336134}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10. Windows Forms - Custom Controls", "10. Windows Forms - Custom Controls", "{718D2BE5-3500-483F-BC23-FD1336336134}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCalculator", "SimpleCalculator\SimpleCalculator.csproj", "{B7D5F54B-FF43-44B0-8775-5DD0DCC03E3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyEvents", "KeyEVents\KeyEvents.csproj", "{989E2B9D-BC51-4379-8CDA-9AADBB434528}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyEvents", "KeyEvents\KeyEvents.csproj", "{989E2B9D-BC51-4379-8CDA-9AADBB434528}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MouseEvents", "MouseEvents\MouseEvents.csproj", "{1DAC53A2-16C7-4DA9-806D-75279DA9F91E}"
 EndProject
@@ -82,6 +82,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08. Windows Forms", "08. Windows Forms", "{E88FB65B-BFCB-437C-BF9E-690FBF664FBC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyEventsNumericTextBox", "KeyEventsNumericTextBox\KeyEventsNumericTextBox.csproj", "{7DCB57BF-028E-4722-8E1C-A5ED0D4B07A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09. Windows Forms - ListView, TreeView", "09. Windows Forms - ListView, TreeView", "{BF9CD386-61B2-438C-8F74-D95ED547CF6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeViewSample", "TreeViewSample\TreeViewSample.csproj", "{D904DCD7-389C-4E75-A863-F673710113AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -321,6 +325,14 @@ Global
 		{7DCB57BF-028E-4722-8E1C-A5ED0D4B07A5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7DCB57BF-028E-4722-8E1C-A5ED0D4B07A5}.Release|x86.ActiveCfg = Release|Any CPU
 		{7DCB57BF-028E-4722-8E1C-A5ED0D4B07A5}.Release|x86.Build.0 = Release|Any CPU
+		{D904DCD7-389C-4E75-A863-F673710113AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D904DCD7-389C-4E75-A863-F673710113AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D904DCD7-389C-4E75-A863-F673710113AD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D904DCD7-389C-4E75-A863-F673710113AD}.Debug|x86.Build.0 = Debug|Any CPU
+		{D904DCD7-389C-4E75-A863-F673710113AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D904DCD7-389C-4E75-A863-F673710113AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D904DCD7-389C-4E75-A863-F673710113AD}.Release|x86.ActiveCfg = Release|Any CPU
+		{D904DCD7-389C-4E75-A863-F673710113AD}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -355,5 +367,6 @@ Global
 		{989E2B9D-BC51-4379-8CDA-9AADBB434528} = {9DA02F82-AD1C-4834-8C96-2836B80B1ECD}
 		{1DAC53A2-16C7-4DA9-806D-75279DA9F91E} = {9DA02F82-AD1C-4834-8C96-2836B80B1ECD}
 		{7DCB57BF-028E-4722-8E1C-A5ED0D4B07A5} = {9DA02F82-AD1C-4834-8C96-2836B80B1ECD}
+		{D904DCD7-389C-4E75-A863-F673710113AD} = {BF9CD386-61B2-438C-8F74-D95ED547CF6A}
 	EndGlobalSection
 EndGlobal

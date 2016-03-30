@@ -39,9 +39,7 @@ namespace StandardInterfaces
 
 		public object Clone()
 		{
-			//Get a shallow copy
 			var newPerson = (Person)MemberwiseClone();
-
 			return newPerson;
 		}
 	}

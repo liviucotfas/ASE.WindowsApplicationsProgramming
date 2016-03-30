@@ -1,4 +1,4 @@
-﻿using System.Drawing;
+﻿using System.ComponentModel;
 using System.Windows.Forms;
 
 namespace MouseEvents
@@ -8,7 +8,7 @@ namespace MouseEvents
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
-		private System.ComponentModel.IContainer components = null;
+		private IContainer components = null;
 
 		/// <summary>
 		/// Clean up any resources being used.
@@ -38,12 +38,15 @@ namespace MouseEvents
 			// 
 			// btnReset
 			// 
+			this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+			this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnReset.ForeColor = System.Drawing.Color.White;
 			this.btnReset.Location = new System.Drawing.Point(237, 9);
 			this.btnReset.Name = "btnReset";
 			this.btnReset.Size = new System.Drawing.Size(75, 23);
 			this.btnReset.TabIndex = 0;
 			this.btnReset.Text = "&Reset";
-			this.btnReset.UseVisualStyleBackColor = true;
+			this.btnReset.UseVisualStyleBackColor = false;
 			this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
 			// 
 			// lbl
@@ -60,6 +63,7 @@ namespace MouseEvents
 			this.lbl.MouseEnter += new System.EventHandler(this.lbl_MouseEnter);
 			this.lbl.MouseLeave += new System.EventHandler(this.lbl_MouseLeave);
 			this.lbl.MouseHover += new System.EventHandler(this.lbl_MouseHover);
+			this.lbl.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lbl_MouseMove);
 			this.lbl.MouseUp += new System.Windows.Forms.MouseEventHandler(this.lbl_MouseUp);
 			this.lbl.MouseWheel += new System.Windows.Forms.MouseEventHandler(this.lbl_MouseWheel);
 			// 
@@ -90,9 +94,9 @@ namespace MouseEvents
 
 		#endregion
 
-		private System.Windows.Forms.Button btnReset;
-		private System.Windows.Forms.Label lbl;
-		private System.Windows.Forms.TextBox txt;
+		private Button btnReset;
+		private Label lbl;
+		private TextBox txt;
 	}
 }
 

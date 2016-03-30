@@ -316,7 +316,7 @@ namespace ValidationTextFile
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.CausesValidation = false;
-			this.ClientSize = new System.Drawing.Size(618, 321);
+			this.ClientSize = new System.Drawing.Size(618, 285);
 			this.Controls.Add(this.lbCuloarePick);
 			this.Controls.Add(this.groupBox1);
 			this.Controls.Add(this.btnSalvare);
