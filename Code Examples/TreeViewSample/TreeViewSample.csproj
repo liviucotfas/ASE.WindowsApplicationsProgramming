@@ -79,8 +79,14 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Images\" />
+    <Content Include="Images\closedFolder.png" />
+    <Content Include="Images\file.png" />
+    <Content Include="Images\jpgFile.png" />
+    <Content Include="Images\openFolder.png" />
+    <Content Include="Images\pdfFile.png" />
+    <Content Include="Images\textFile.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

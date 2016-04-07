@@ -1,8 +1,6 @@
-﻿using System;
-using System.Drawing;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
-namespace TreeViewListView
+namespace TreeViewSample
 {
 	partial class MainForm
 	{
@@ -47,7 +45,7 @@ namespace TreeViewListView
 			// 
 			// tvw
 			// 
-			this.tvw.BackColor = System.Drawing.SystemColors.Control;
+			this.tvw.BackColor = System.Drawing.SystemColors.Window;
 			this.tvw.Dock = System.Windows.Forms.DockStyle.Top;
 			this.tvw.ForeColor = System.Drawing.Color.DarkRed;
 			this.tvw.HideSelection = false;

@@ -21,7 +21,7 @@ namespace SerializableCustomCollectionEvents
 		{
 			listaComenzi.Add(comanda);
 			//ne abonam la evenimentul de modificare comanda
-			comanda.ModificareComanda += new EventHandler(ComandaModificareComanda);
+			comanda.ModificareComanda += ComandaModificareComanda;
 			// notificam modificarea colectiei (adaugarea unei noi comenzi)
 			OnModificareColectie(new EventArgs());
 		}

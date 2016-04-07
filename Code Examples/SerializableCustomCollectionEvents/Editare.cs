@@ -1,8 +1,7 @@
 using System;
 using System.Windows.Forms;
-using SerializableCustomCollectionEvents;
 
-namespace Seminar5
+namespace SerializableCustomCollectionEvents
 {
     public partial class Editare : Form
     {

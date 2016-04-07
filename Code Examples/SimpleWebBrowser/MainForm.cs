@@ -15,8 +15,8 @@ namespace SimpleWebBrowser
 
 		private void MainForm_Load(object sender, EventArgs e)
 		{
-			this.Text = "MyWebBrowser";
-			this.Size = new Size(600, 400);
+			Text = "MyWebBrowser";
+			Size = new Size(600, 400);
 			wb.GoHome();
 		}
 

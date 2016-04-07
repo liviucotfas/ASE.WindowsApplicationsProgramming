@@ -1,4 +1,4 @@
-namespace Seminar5
+namespace SerializableCustomCollectionEvents
 {
     partial class Editare
     {

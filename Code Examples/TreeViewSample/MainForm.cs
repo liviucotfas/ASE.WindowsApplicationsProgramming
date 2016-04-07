@@ -2,7 +2,7 @@
 using System.IO;
 using System.Windows.Forms;
 
-namespace TreeViewListView
+namespace TreeViewSample
 {
 	public partial class MainForm : Form
 	{
@@ -94,7 +94,7 @@ namespace TreeViewListView
 					}
 
 					TreeNode subNode = new TreeNode(dirInfo.Name);
-					subNode.ImageIndex = 0;
+					subNode.ImageKey = "closedFolder.png";
 					subNode.SelectedImageKey = "openFolder.png";
 					parentNode.Nodes.Add(subNode);
 				}

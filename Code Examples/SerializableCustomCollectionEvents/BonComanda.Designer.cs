@@ -29,7 +29,7 @@ namespace SerializableCustomCollectionEvents
         private void InitializeComponent()
         {
 			this.components = new System.ComponentModel.Container();
-			this.lblTitlu = new System.Windows.Forms.Label();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BonComanda));
 			this.tbData = new System.Windows.Forms.TextBox();
 			this.tbOra = new System.Windows.Forms.TextBox();
 			this.lblData = new System.Windows.Forms.Label();
@@ -37,8 +37,6 @@ namespace SerializableCustomCollectionEvents
 			this.epNume = new System.Windows.Forms.ErrorProvider(this.components);
 			this.tabControl = new System.Windows.Forms.TabControl();
 			this.tabPage1 = new System.Windows.Forms.TabPage();
-			this.label1 = new System.Windows.Forms.Label();
-			this.lbNrComenzi = new System.Windows.Forms.Label();
 			this.btnSalvare = new System.Windows.Forms.Button();
 			this.cbMasina = new System.Windows.Forms.ComboBox();
 			this.lblMasina = new System.Windows.Forms.Label();
@@ -55,26 +53,27 @@ namespace SerializableCustomCollectionEvents
 			this.chNume = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.chPrenume = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.chMasina = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+			this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+			this.toolStripOrderCount = new System.Windows.Forms.ToolStripStatusLabel();
+			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+			this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+			this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+			this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
 			((System.ComponentModel.ISupportInitialize)(this.epNume)).BeginInit();
 			this.tabControl.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			this.tpVizComenzi.SuspendLayout();
+			this.statusStrip1.SuspendLayout();
+			this.menuStrip1.SuspendLayout();
+			this.toolStrip1.SuspendLayout();
 			this.SuspendLayout();
-			// 
-			// lblTitlu
-			// 
-			this.lblTitlu.AutoSize = true;
-			this.lblTitlu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblTitlu.ForeColor = System.Drawing.Color.DarkRed;
-			this.lblTitlu.Location = new System.Drawing.Point(9, 15);
-			this.lblTitlu.Name = "lblTitlu";
-			this.lblTitlu.Size = new System.Drawing.Size(203, 17);
-			this.lblTitlu.TabIndex = 0;
-			this.lblTitlu.Text = "Bon comanda- Dealer Auto";
 			// 
 			// tbData
 			// 
-			this.tbData.Location = new System.Drawing.Point(380, 15);
+			this.tbData.Location = new System.Drawing.Point(380, 59);
 			this.tbData.Name = "tbData";
 			this.tbData.ReadOnly = true;
 			this.tbData.Size = new System.Drawing.Size(87, 20);
@@ -82,7 +81,7 @@ namespace SerializableCustomCollectionEvents
 			// 
 			// tbOra
 			// 
-			this.tbOra.Location = new System.Drawing.Point(507, 15);
+			this.tbOra.Location = new System.Drawing.Point(507, 59);
 			this.tbOra.Name = "tbOra";
 			this.tbOra.ReadOnly = true;
 			this.tbOra.Size = new System.Drawing.Size(87, 20);
@@ -91,7 +90,7 @@ namespace SerializableCustomCollectionEvents
 			// lblData
 			// 
 			this.lblData.AutoSize = true;
-			this.lblData.Location = new System.Drawing.Point(347, 19);
+			this.lblData.Location = new System.Drawing.Point(347, 63);
 			this.lblData.Name = "lblData";
 			this.lblData.Size = new System.Drawing.Size(30, 13);
 			this.lblData.TabIndex = 13;
@@ -100,7 +99,7 @@ namespace SerializableCustomCollectionEvents
 			// lblOra
 			// 
 			this.lblOra.AutoSize = true;
-			this.lblOra.Location = new System.Drawing.Point(480, 19);
+			this.lblOra.Location = new System.Drawing.Point(480, 63);
 			this.lblOra.Name = "lblOra";
 			this.lblOra.Size = new System.Drawing.Size(24, 13);
 			this.lblOra.TabIndex = 14;
@@ -114,7 +113,7 @@ namespace SerializableCustomCollectionEvents
 			// 
 			this.tabControl.Controls.Add(this.tabPage1);
 			this.tabControl.Controls.Add(this.tpVizComenzi);
-			this.tabControl.Location = new System.Drawing.Point(12, 41);
+			this.tabControl.Location = new System.Drawing.Point(12, 85);
 			this.tabControl.Name = "tabControl";
 			this.tabControl.SelectedIndex = 0;
 			this.tabControl.Size = new System.Drawing.Size(623, 203);
@@ -122,8 +121,6 @@ namespace SerializableCustomCollectionEvents
 			// 
 			// tabPage1
 			// 
-			this.tabPage1.Controls.Add(this.label1);
-			this.tabPage1.Controls.Add(this.lbNrComenzi);
 			this.tabPage1.Controls.Add(this.btnSalvare);
 			this.tabPage1.Controls.Add(this.cbMasina);
 			this.tabPage1.Controls.Add(this.lblMasina);
@@ -133,31 +130,11 @@ namespace SerializableCustomCollectionEvents
 			this.tabPage1.Controls.Add(this.lblNume);
 			this.tabPage1.Location = new System.Drawing.Point(4, 22);
 			this.tabPage1.Name = "tabPage1";
-			this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+			this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
 			this.tabPage1.Size = new System.Drawing.Size(615, 177);
 			this.tabPage1.TabIndex = 0;
 			this.tabPage1.Text = "Adauga Comanda";
 			this.tabPage1.UseVisualStyleBackColor = true;
-			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(434, 46);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(95, 13);
-			this.label1.TabIndex = 43;
-			this.label1.Text = "Numar de comenzi";
-			// 
-			// lbNrComenzi
-			// 
-			this.lbNrComenzi.AutoSize = true;
-			this.lbNrComenzi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.lbNrComenzi.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbNrComenzi.Location = new System.Drawing.Point(426, 60);
-			this.lbNrComenzi.Name = "lbNrComenzi";
-			this.lbNrComenzi.Size = new System.Drawing.Size(116, 39);
-			this.lbNrComenzi.TabIndex = 42;
-			this.lbNrComenzi.Text = "           ";
 			// 
 			// btnSalvare
 			// 
@@ -171,6 +148,7 @@ namespace SerializableCustomCollectionEvents
 			// 
 			// cbMasina
 			// 
+			this.cbMasina.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.cbMasina.FormattingEnabled = true;
 			this.cbMasina.Items.AddRange(new object[] {
             "BMW",
@@ -236,7 +214,7 @@ namespace SerializableCustomCollectionEvents
 			this.tpVizComenzi.Controls.Add(this.lvComenzi);
 			this.tpVizComenzi.Location = new System.Drawing.Point(4, 22);
 			this.tpVizComenzi.Name = "tpVizComenzi";
-			this.tpVizComenzi.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+			this.tpVizComenzi.Padding = new System.Windows.Forms.Padding(3);
 			this.tpVizComenzi.Size = new System.Drawing.Size(615, 177);
 			this.tpVizComenzi.TabIndex = 1;
 			this.tpVizComenzi.Text = "Vizalizare comenzi";
@@ -284,10 +262,13 @@ namespace SerializableCustomCollectionEvents
 			// 
 			// lvComenzi
 			// 
+			this.lvComenzi.AllowColumnReorder = true;
 			this.lvComenzi.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.chNume,
             this.chPrenume,
             this.chMasina});
+			this.lvComenzi.FullRowSelect = true;
+			this.lvComenzi.GridLines = true;
 			this.lvComenzi.Location = new System.Drawing.Point(3, 3);
 			this.lvComenzi.Name = "lvComenzi";
 			this.lvComenzi.Size = new System.Drawing.Size(518, 171);
@@ -307,34 +288,114 @@ namespace SerializableCustomCollectionEvents
 			// 
 			this.chMasina.Text = "Masina";
 			// 
+			// statusStrip1
+			// 
+			this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1,
+            this.toolStripOrderCount});
+			this.statusStrip1.Location = new System.Drawing.Point(0, 298);
+			this.statusStrip1.Name = "statusStrip1";
+			this.statusStrip1.Size = new System.Drawing.Size(643, 22);
+			this.statusStrip1.TabIndex = 28;
+			this.statusStrip1.Text = "statusStrip1";
+			// 
+			// toolStripOrderCount
+			// 
+			this.toolStripOrderCount.Name = "toolStripOrderCount";
+			this.toolStripOrderCount.Size = new System.Drawing.Size(13, 17);
+			this.toolStripOrderCount.Text = "0";
+			// 
+			// menuStrip1
+			// 
+			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.aboutToolStripMenuItem});
+			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+			this.menuStrip1.Name = "menuStrip1";
+			this.menuStrip1.Size = new System.Drawing.Size(643, 24);
+			this.menuStrip1.TabIndex = 29;
+			this.menuStrip1.Text = "menuStrip1";
+			// 
+			// fileToolStripMenuItem
+			// 
+			this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exitToolStripMenuItem});
+			this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+			this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+			this.fileToolStripMenuItem.Text = "File";
+			// 
+			// exitToolStripMenuItem
+			// 
+			this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+			this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
+			this.exitToolStripMenuItem.Text = "Exit";
+			// 
+			// aboutToolStripMenuItem
+			// 
+			this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+			this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+			this.aboutToolStripMenuItem.Text = "About";
+			// 
+			// toolStrip1
+			// 
+			this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton1});
+			this.toolStrip1.Location = new System.Drawing.Point(0, 24);
+			this.toolStrip1.Name = "toolStrip1";
+			this.toolStrip1.Size = new System.Drawing.Size(643, 25);
+			this.toolStrip1.TabIndex = 30;
+			this.toolStrip1.Text = "toolStrip1";
+			// 
+			// toolStripButton1
+			// 
+			this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+			this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.toolStripButton1.Name = "toolStripButton1";
+			this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+			this.toolStripButton1.Text = "toolStripButton1";
+			// 
+			// toolStripStatusLabel1
+			// 
+			this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+			this.toolStripStatusLabel1.Size = new System.Drawing.Size(95, 17);
+			this.toolStripStatusLabel1.Text = "Numar comenzi:";
+			// 
 			// BonComanda
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.CausesValidation = false;
-			this.ClientSize = new System.Drawing.Size(643, 261);
+			this.ClientSize = new System.Drawing.Size(643, 320);
+			this.Controls.Add(this.toolStrip1);
+			this.Controls.Add(this.statusStrip1);
+			this.Controls.Add(this.menuStrip1);
 			this.Controls.Add(this.tabControl);
 			this.Controls.Add(this.lblOra);
 			this.Controls.Add(this.lblData);
 			this.Controls.Add(this.tbOra);
 			this.Controls.Add(this.tbData);
-			this.Controls.Add(this.lblTitlu);
+			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "BonComanda";
-			this.Text = "Bon de comanda";
+			this.Text = "Bon comanda- Dealer Auto";
 			this.Load += new System.EventHandler(this.Form1Load);
 			((System.ComponentModel.ISupportInitialize)(this.epNume)).EndInit();
 			this.tabControl.ResumeLayout(false);
 			this.tabPage1.ResumeLayout(false);
 			this.tabPage1.PerformLayout();
 			this.tpVizComenzi.ResumeLayout(false);
+			this.statusStrip1.ResumeLayout(false);
+			this.statusStrip1.PerformLayout();
+			this.menuStrip1.ResumeLayout(false);
+			this.menuStrip1.PerformLayout();
+			this.toolStrip1.ResumeLayout(false);
+			this.toolStrip1.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblTitlu;
         private System.Windows.Forms.TextBox tbData;
         private System.Windows.Forms.TextBox tbOra;
         private System.Windows.Forms.Label lblData;
@@ -354,12 +415,19 @@ namespace SerializableCustomCollectionEvents
         private System.Windows.Forms.ColumnHeader chNume;
         private System.Windows.Forms.ColumnHeader chPrenume;
         private System.Windows.Forms.ColumnHeader chMasina;
-        private System.Windows.Forms.Label lbNrComenzi;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnRestaureaza;
         private System.Windows.Forms.Button btnSalveaza;
-    }
+		private System.Windows.Forms.StatusStrip statusStrip1;
+		private System.Windows.Forms.MenuStrip menuStrip1;
+		private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+		private System.Windows.Forms.ToolStrip toolStrip1;
+		private System.Windows.Forms.ToolStripButton toolStripButton1;
+		private System.Windows.Forms.ToolStripStatusLabel toolStripOrderCount;
+		private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+		private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+	}
 }
 

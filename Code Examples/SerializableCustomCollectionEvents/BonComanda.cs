@@ -3,7 +3,6 @@ using System.Globalization;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Windows.Forms;
-using Seminar5;
 
 namespace SerializableCustomCollectionEvents
 {
@@ -12,8 +11,8 @@ namespace SerializableCustomCollectionEvents
 		public BonComanda()
 		{
 			InitializeComponent();
-			ModelAplicatie.Comenzi.ModificareColectie += new EventHandler(this.AfiseazaNrComenzi);
-			ModelAplicatie.Comenzi.ModificareColectie += new EventHandler(this.AfiseazaComenzi);
+			ModelAplicatie.Comenzi.ModificareColectie += AfiseazaNrComenzi;
+			ModelAplicatie.Comenzi.ModificareColectie += AfiseazaComenzi;
 		}
 
 		private void Form1Load(object sender, EventArgs e)
@@ -30,7 +29,7 @@ namespace SerializableCustomCollectionEvents
 
 		void AfiseazaNrComenzi(object sender, EventArgs e)
 		{
-			lbNrComenzi.Text = ModelAplicatie.Comenzi.Lungime.ToString(CultureInfo.InvariantCulture);
+			toolStripOrderCount.Text = ModelAplicatie.Comenzi.Lungime.ToString(CultureInfo.InvariantCulture);
 		}
 
 		void AfiseazaComenzi(object sender, EventArgs e)
@@ -38,7 +37,7 @@ namespace SerializableCustomCollectionEvents
 			lvComenzi.Items.Clear();
 			foreach (Comanda comanda in ModelAplicatie.Comenzi)
 			{
-				lvComenzi.Items.Add(new ListViewItem(new string[] { comanda.Nume, comanda.Prenume, comanda.Masina, comanda.Data.ToString(CultureInfo.InvariantCulture) }));
+				lvComenzi.Items.Add(new ListViewItem(new[] { comanda.Nume, comanda.Prenume, comanda.Masina, comanda.Data.ToString(CultureInfo.InvariantCulture) }));
 				lvComenzi.Items[lvComenzi.Items.Count - 1].Tag = comanda;
 			}
 		}
