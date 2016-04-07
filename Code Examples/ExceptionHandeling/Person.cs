@@ -7,15 +7,15 @@ namespace ExceptionHandling
 		#region Properties
 
 		#region Age
-		int age;
+		int _age;
 		public int Age
 		{
-			get { return age; }
+			get { return _age; }
 			set
 			{
 				if (value < 0 || value > 150)
 					throw new InvalidAgeException(value);
-				age = value;
+				_age = value;
 			}
 		}
 		#endregion
@@ -36,7 +36,7 @@ namespace ExceptionHandling
 
 		public Person(string name, int age)
 		{
-			this.age = age;
+			this._age = age;
 			Name = name;
 		}
 	}

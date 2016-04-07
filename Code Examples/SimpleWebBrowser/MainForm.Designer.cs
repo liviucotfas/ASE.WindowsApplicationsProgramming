@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 			this.tsNavigation = new System.Windows.Forms.ToolStrip();
 			this.btnBack = new System.Windows.Forms.ToolStripButton();
@@ -39,14 +40,18 @@
 			this.statusStrip1 = new System.Windows.Forms.StatusStrip();
 			this.pbLoad = new System.Windows.Forms.ToolStripProgressBar();
 			this.wb = new System.Windows.Forms.WebBrowser();
+			this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+			this.reloadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.msMain = new System.Windows.Forms.MenuStrip();
 			this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.backToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.tsNavigation.SuspendLayout();
 			this.statusStrip1.SuspendLayout();
+			this.contextMenuStrip1.SuspendLayout();
 			this.msMain.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -62,7 +67,7 @@
             this.btnGo});
 			this.tsNavigation.Location = new System.Drawing.Point(0, 24);
 			this.tsNavigation.Name = "tsNavigation";
-			this.tsNavigation.Size = new System.Drawing.Size(533, 25);
+			this.tsNavigation.Size = new System.Drawing.Size(663, 25);
 			this.tsNavigation.TabIndex = 0;
 			this.tsNavigation.Text = "toolStrip1";
 			// 
@@ -123,9 +128,9 @@
 			// 
 			this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pbLoad});
-			this.statusStrip1.Location = new System.Drawing.Point(0, 295);
+			this.statusStrip1.Location = new System.Drawing.Point(0, 272);
 			this.statusStrip1.Name = "statusStrip1";
-			this.statusStrip1.Size = new System.Drawing.Size(533, 22);
+			this.statusStrip1.Size = new System.Drawing.Size(663, 22);
 			this.statusStrip1.TabIndex = 1;
 			this.statusStrip1.Text = "statusStrip1";
 			// 
@@ -136,15 +141,31 @@
 			// 
 			// wb
 			// 
+			this.wb.ContextMenuStrip = this.contextMenuStrip1;
 			this.wb.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.wb.IsWebBrowserContextMenuEnabled = false;
 			this.wb.Location = new System.Drawing.Point(0, 49);
 			this.wb.MinimumSize = new System.Drawing.Size(20, 20);
 			this.wb.Name = "wb";
-			this.wb.Size = new System.Drawing.Size(533, 246);
+			this.wb.Size = new System.Drawing.Size(663, 223);
 			this.wb.TabIndex = 2;
 			this.wb.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.wb_DocumentCompleted);
 			this.wb.Navigated += new System.Windows.Forms.WebBrowserNavigatedEventHandler(this.wb_Navigated);
 			this.wb.Navigating += new System.Windows.Forms.WebBrowserNavigatingEventHandler(this.wb_Navigating);
+			// 
+			// contextMenuStrip1
+			// 
+			this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.backToolStripMenuItem,
+            this.reloadToolStripMenuItem});
+			this.contextMenuStrip1.Name = "contextMenuStrip1";
+			this.contextMenuStrip1.Size = new System.Drawing.Size(153, 70);
+			// 
+			// reloadToolStripMenuItem
+			// 
+			this.reloadToolStripMenuItem.Name = "reloadToolStripMenuItem";
+			this.reloadToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.reloadToolStripMenuItem.Text = "Reload";
 			// 
 			// msMain
 			// 
@@ -153,7 +174,7 @@
             this.aboutToolStripMenuItem});
 			this.msMain.Location = new System.Drawing.Point(0, 0);
 			this.msMain.Name = "msMain";
-			this.msMain.Size = new System.Drawing.Size(533, 24);
+			this.msMain.Size = new System.Drawing.Size(663, 24);
 			this.msMain.TabIndex = 3;
 			this.msMain.Text = "menuStrip1";
 			// 
@@ -195,11 +216,17 @@
 			this.aboutToolStripMenuItem.Text = "About";
 			this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
 			// 
+			// backToolStripMenuItem
+			// 
+			this.backToolStripMenuItem.Name = "backToolStripMenuItem";
+			this.backToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.backToolStripMenuItem.Text = "Back";
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(533, 317);
+			this.ClientSize = new System.Drawing.Size(663, 294);
 			this.Controls.Add(this.wb);
 			this.Controls.Add(this.statusStrip1);
 			this.Controls.Add(this.tsNavigation);
@@ -212,6 +239,7 @@
 			this.tsNavigation.PerformLayout();
 			this.statusStrip1.ResumeLayout(false);
 			this.statusStrip1.PerformLayout();
+			this.contextMenuStrip1.ResumeLayout(false);
 			this.msMain.ResumeLayout(false);
 			this.msMain.PerformLayout();
 			this.ResumeLayout(false);
@@ -237,6 +265,9 @@
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-    }
+		private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+		private System.Windows.Forms.ToolStripMenuItem reloadToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem backToolStripMenuItem;
+	}
 }
 

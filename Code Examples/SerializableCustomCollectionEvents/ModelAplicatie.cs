@@ -1,6 +1,4 @@
-﻿using Seminar5;
-
-namespace SerializableCustomCollectionEvents
+﻿namespace SerializableCustomCollectionEvents
 {
 	internal class ModelAplicatie
 	{
