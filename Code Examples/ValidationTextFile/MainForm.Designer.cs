@@ -37,8 +37,6 @@ namespace ValidationTextFile
 			this.lblSex = new System.Windows.Forms.Label();
 			this.rbM = new System.Windows.Forms.RadioButton();
 			this.rbF = new System.Windows.Forms.RadioButton();
-			this.lblVarsta = new System.Windows.Forms.Label();
-			this.tbVarsta = new System.Windows.Forms.TextBox();
 			this.lblPermis = new System.Windows.Forms.Label();
 			this.tbData = new System.Windows.Forms.TextBox();
 			this.tbOra = new System.Windows.Forms.TextBox();
@@ -52,10 +50,11 @@ namespace ValidationTextFile
 			this.lblMasina = new System.Windows.Forms.Label();
 			this.cbMasina = new System.Windows.Forms.ComboBox();
 			this.lblCuloare = new System.Windows.Forms.Label();
-			this.btnSalvare = new System.Windows.Forms.Button();
 			this.epNume = new System.Windows.Forms.ErrorProvider(this.components);
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.lbCuloarePick = new System.Windows.Forms.Label();
+			this.lblVarsta = new System.Windows.Forms.Label();
+			this.dtpBirthDate = new System.Windows.Forms.DateTimePicker();
 			((System.ComponentModel.ISupportInitialize)(this.epNume)).BeginInit();
 			this.groupBox1.SuspendLayout();
 			this.SuspendLayout();
@@ -133,23 +132,6 @@ namespace ValidationTextFile
 			this.rbF.TabStop = true;
 			this.rbF.Text = "F";
 			this.rbF.UseVisualStyleBackColor = true;
-			// 
-			// lblVarsta
-			// 
-			this.lblVarsta.AutoSize = true;
-			this.lblVarsta.Location = new System.Drawing.Point(193, 99);
-			this.lblVarsta.Name = "lblVarsta";
-			this.lblVarsta.Size = new System.Drawing.Size(37, 13);
-			this.lblVarsta.TabIndex = 8;
-			this.lblVarsta.Text = "Varsta";
-			// 
-			// tbVarsta
-			// 
-			this.tbVarsta.Location = new System.Drawing.Point(245, 95);
-			this.tbVarsta.Name = "tbVarsta";
-			this.tbVarsta.Size = new System.Drawing.Size(37, 20);
-			this.tbVarsta.TabIndex = 9;
-			this.tbVarsta.Validating += new System.ComponentModel.CancelEventHandler(this.tbVarsta_Validating);
 			// 
 			// lblPermis
 			// 
@@ -241,7 +223,7 @@ namespace ValidationTextFile
 			// lblMasina
 			// 
 			this.lblMasina.AutoSize = true;
-			this.lblMasina.Location = new System.Drawing.Point(25, 206);
+			this.lblMasina.Location = new System.Drawing.Point(25, 244);
 			this.lblMasina.Name = "lblMasina";
 			this.lblMasina.Size = new System.Drawing.Size(44, 13);
 			this.lblMasina.TabIndex = 20;
@@ -258,7 +240,7 @@ namespace ValidationTextFile
             "Lada",
             "Mercedes",
             "Skoda"});
-			this.cbMasina.Location = new System.Drawing.Point(82, 202);
+			this.cbMasina.Location = new System.Drawing.Point(82, 240);
 			this.cbMasina.Name = "cbMasina";
 			this.cbMasina.Size = new System.Drawing.Size(200, 21);
 			this.cbMasina.Sorted = true;
@@ -267,21 +249,11 @@ namespace ValidationTextFile
 			// lblCuloare
 			// 
 			this.lblCuloare.AutoSize = true;
-			this.lblCuloare.Location = new System.Drawing.Point(335, 206);
+			this.lblCuloare.Location = new System.Drawing.Point(335, 244);
 			this.lblCuloare.Name = "lblCuloare";
 			this.lblCuloare.Size = new System.Drawing.Size(43, 13);
 			this.lblCuloare.TabIndex = 22;
 			this.lblCuloare.Text = "Culoare";
-			// 
-			// btnSalvare
-			// 
-			this.btnSalvare.Location = new System.Drawing.Point(519, 241);
-			this.btnSalvare.Name = "btnSalvare";
-			this.btnSalvare.Size = new System.Drawing.Size(75, 23);
-			this.btnSalvare.TabIndex = 24;
-			this.btnSalvare.Text = "Salvare";
-			this.btnSalvare.UseVisualStyleBackColor = true;
-			this.btnSalvare.Click += new System.EventHandler(this.btnSalvare_Click);
 			// 
 			// epNume
 			// 
@@ -293,7 +265,7 @@ namespace ValidationTextFile
 			this.groupBox1.Controls.Add(this.lblDeLa);
 			this.groupBox1.Controls.Add(this.lblPanaLa);
 			this.groupBox1.Controls.Add(this.dtpPanaLa);
-			this.groupBox1.Location = new System.Drawing.Point(12, 140);
+			this.groupBox1.Location = new System.Drawing.Point(12, 178);
 			this.groupBox1.Name = "groupBox1";
 			this.groupBox1.Size = new System.Drawing.Size(582, 52);
 			this.groupBox1.TabIndex = 25;
@@ -304,22 +276,38 @@ namespace ValidationTextFile
 			// 
 			this.lbCuloarePick.AutoSize = true;
 			this.lbCuloarePick.BackColor = System.Drawing.Color.Black;
-			this.lbCuloarePick.Location = new System.Drawing.Point(390, 206);
+			this.lbCuloarePick.Location = new System.Drawing.Point(390, 244);
 			this.lbCuloarePick.Name = "lbCuloarePick";
 			this.lbCuloarePick.Size = new System.Drawing.Size(196, 13);
 			this.lbCuloarePick.TabIndex = 26;
 			this.lbCuloarePick.Text = "                                                               ";
 			this.lbCuloarePick.Click += new System.EventHandler(this.btnCuloare_Click);
 			// 
+			// lblVarsta
+			// 
+			this.lblVarsta.AutoSize = true;
+			this.lblVarsta.Location = new System.Drawing.Point(25, 129);
+			this.lblVarsta.Name = "lblVarsta";
+			this.lblVarsta.Size = new System.Drawing.Size(37, 13);
+			this.lblVarsta.TabIndex = 8;
+			this.lblVarsta.Text = "Varsta";
+			// 
+			// dtpBirthDate
+			// 
+			this.dtpBirthDate.Location = new System.Drawing.Point(82, 129);
+			this.dtpBirthDate.Name = "dtpBirthDate";
+			this.dtpBirthDate.Size = new System.Drawing.Size(200, 20);
+			this.dtpBirthDate.TabIndex = 27;
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.CausesValidation = false;
-			this.ClientSize = new System.Drawing.Size(618, 285);
+			this.ClientSize = new System.Drawing.Size(618, 315);
+			this.Controls.Add(this.dtpBirthDate);
 			this.Controls.Add(this.lbCuloarePick);
 			this.Controls.Add(this.groupBox1);
-			this.Controls.Add(this.btnSalvare);
 			this.Controls.Add(this.lblCuloare);
 			this.Controls.Add(this.cbMasina);
 			this.Controls.Add(this.lblMasina);
@@ -329,7 +317,6 @@ namespace ValidationTextFile
 			this.Controls.Add(this.tbOra);
 			this.Controls.Add(this.tbData);
 			this.Controls.Add(this.lblPermis);
-			this.Controls.Add(this.tbVarsta);
 			this.Controls.Add(this.lblVarsta);
 			this.Controls.Add(this.rbF);
 			this.Controls.Add(this.rbM);
@@ -360,8 +347,6 @@ namespace ValidationTextFile
         private System.Windows.Forms.Label lblSex;
         private System.Windows.Forms.RadioButton rbM;
         private System.Windows.Forms.RadioButton rbF;
-        private System.Windows.Forms.Label lblVarsta;
-        private System.Windows.Forms.TextBox tbVarsta;
         private System.Windows.Forms.Label lblPermis;
         private System.Windows.Forms.TextBox tbData;
         private System.Windows.Forms.TextBox tbOra;
@@ -375,10 +360,11 @@ namespace ValidationTextFile
         private System.Windows.Forms.Label lblMasina;
         private System.Windows.Forms.ComboBox cbMasina;
         private System.Windows.Forms.Label lblCuloare;
-		private System.Windows.Forms.Button btnSalvare;
         private System.Windows.Forms.ErrorProvider epNume;
         private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.Label lbCuloarePick;
-    }
+		private System.Windows.Forms.Label lblVarsta;
+		private System.Windows.Forms.DateTimePicker dtpBirthDate;
+	}
 }
 
