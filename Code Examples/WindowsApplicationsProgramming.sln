@@ -89,7 +89,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeViewSample", "TreeViewS
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07. Windows Forms - Menus", "07. Windows Forms - Menus", "{0F901F73-692C-41A2-8496-548DE1430391}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationExceptionHandling", "ValidationExceptionHandeling\ValidationExceptionHandling.csproj", "{18A2F0BE-9379-49A6-9561-94AB2FC0D9AE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationCustomExceptions", "ValidationExceptionHandeling\ValidationCustomExceptions.csproj", "{18A2F0BE-9379-49A6-9561-94AB2FC0D9AE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListViewSample", "ListViewSample\ListViewSample.csproj", "{73AFE8EC-1C36-41F2-B5FD-F03B1889E294}"
 EndProject

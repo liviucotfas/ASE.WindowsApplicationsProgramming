@@ -35,6 +35,11 @@ namespace Operators
 			return p.Age;
 		}
 
+		//public static implicit operator int(Person p)
+		//{
+		//	return p.Age;
+		//}
+
 		public static bool operator <(Person p1, Person p2)
 		{
 			return p1.Age < p2.Age;

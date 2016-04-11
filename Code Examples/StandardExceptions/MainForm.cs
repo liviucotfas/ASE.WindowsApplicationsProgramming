@@ -19,10 +19,16 @@ namespace StandardExceptions
 				int value2 = int.Parse(tbValue2.Text);
 
 				tbResult.Text = (value1/value2).ToString(CultureInfo.InvariantCulture);
+
+				//Throwing an exception:
+				//throw new NotImplementedException();
 			}
 			catch (FormatException ex)
 			{
 				MessageBox.Show(ex.Message);
+
+				//ReThrowing the exception
+				throw; //Handled by Program.Application_ThreadException
 			}
 			catch (DivideByZeroException ex)
 			{

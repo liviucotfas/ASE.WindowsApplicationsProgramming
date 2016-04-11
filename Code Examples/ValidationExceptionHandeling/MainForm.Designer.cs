@@ -1,4 +1,4 @@
-﻿namespace ValidationExceptionHandling
+﻿namespace ValidationCustomExceptions
 {
 	partial class MainForm
 	{
@@ -36,8 +36,8 @@
 			this.label3 = new System.Windows.Forms.Label();
 			this.dtpBirthDate = new System.Windows.Forms.DateTimePicker();
 			this.label4 = new System.Windows.Forms.Label();
-			this.chkFemale = new System.Windows.Forms.RadioButton();
-			this.chkMale = new System.Windows.Forms.RadioButton();
+			this.rbFemale = new System.Windows.Forms.RadioButton();
+			this.rbMale = new System.Windows.Forms.RadioButton();
 			this.label5 = new System.Windows.Forms.Label();
 			this.tbSSN = new System.Windows.Forms.TextBox();
 			this.panel1 = new System.Windows.Forms.Panel();
@@ -113,27 +113,28 @@
 			this.label4.TabIndex = 6;
 			this.label4.Text = "SSN";
 			// 
-			// chkFemale
+			// rbFemale
 			// 
-			this.chkFemale.AutoSize = true;
-			this.chkFemale.Location = new System.Drawing.Point(74, 3);
-			this.chkFemale.Name = "chkFemale";
-			this.chkFemale.Size = new System.Drawing.Size(59, 17);
-			this.chkFemale.TabIndex = 7;
-			this.chkFemale.TabStop = true;
-			this.chkFemale.Text = "Female";
-			this.chkFemale.UseVisualStyleBackColor = true;
+			this.rbFemale.AutoSize = true;
+			this.rbFemale.Location = new System.Drawing.Point(74, 3);
+			this.rbFemale.Name = "rbFemale";
+			this.rbFemale.Size = new System.Drawing.Size(59, 17);
+			this.rbFemale.TabIndex = 7;
+			this.rbFemale.TabStop = true;
+			this.rbFemale.Text = "Female";
+			this.rbFemale.UseVisualStyleBackColor = true;
 			// 
-			// chkMale
+			// rbMale
 			// 
-			this.chkMale.AutoSize = true;
-			this.chkMale.Location = new System.Drawing.Point(3, 3);
-			this.chkMale.Name = "chkMale";
-			this.chkMale.Size = new System.Drawing.Size(48, 17);
-			this.chkMale.TabIndex = 8;
-			this.chkMale.TabStop = true;
-			this.chkMale.Text = "Male";
-			this.chkMale.UseVisualStyleBackColor = true;
+			this.rbMale.AutoSize = true;
+			this.rbMale.Checked = true;
+			this.rbMale.Location = new System.Drawing.Point(3, 3);
+			this.rbMale.Name = "rbMale";
+			this.rbMale.Size = new System.Drawing.Size(48, 17);
+			this.rbMale.TabIndex = 8;
+			this.rbMale.TabStop = true;
+			this.rbMale.Text = "Male";
+			this.rbMale.UseVisualStyleBackColor = true;
 			// 
 			// label5
 			// 
@@ -153,8 +154,8 @@
 			// 
 			// panel1
 			// 
-			this.panel1.Controls.Add(this.chkMale);
-			this.panel1.Controls.Add(this.chkFemale);
+			this.panel1.Controls.Add(this.rbMale);
+			this.panel1.Controls.Add(this.rbFemale);
 			this.panel1.Location = new System.Drawing.Point(466, 28);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(144, 24);
@@ -235,8 +236,8 @@
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.DateTimePicker dtpBirthDate;
 		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.RadioButton chkFemale;
-		private System.Windows.Forms.RadioButton chkMale;
+		private System.Windows.Forms.RadioButton rbFemale;
+		private System.Windows.Forms.RadioButton rbMale;
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.TextBox tbSSN;
 		private System.Windows.Forms.Panel panel1;

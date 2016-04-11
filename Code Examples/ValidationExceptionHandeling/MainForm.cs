@@ -1,7 +1,11 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Windows.Forms;
+using Validation.Entities;
+using ValidationCustomExceptions.Entities;
+using ValidationExceptionHandeling.Entities;
 
-namespace ValidationExceptionHandling
+namespace ValidationCustomExceptions
 {
 	public partial class MainForm : Form
 	{
@@ -21,35 +25,64 @@ namespace ValidationExceptionHandling
 			string firstName = tbFirstName.Text.Trim();
 			string lastName = tbLastName.Text.Trim();
 			DateTime birthDate = dtpBirthDate.Value;
+			string ssn = tbSSN.Text.Trim();
 
-			bool formContainsErrors = false;
+			GenderEnum gender = GenderEnum.Male;
+			if(rbFemale.Checked)
+				gender = GenderEnum.Female;
+
+			bool isValid = true;
 			
 			if (string.IsNullOrWhiteSpace(lastName))
 			{
 				epLastName.SetError(tbFirstName, "The Last Name should not be empty!");
-				formContainsErrors = true;
+				isValid = false;
 			}
 
 			if (string.IsNullOrWhiteSpace(firstName))
 			{
 				epFirstName.SetError(tbFirstName, "The First Name should not be empty!");
-				formContainsErrors = true;
+				isValid = false;
 			}
 
 			//TODO: check the birthDate
 			//TODO: check the Gender
 			//TODO: check the SSN (ex: first digit corresponds to the gender, etc.)
 
-			if (formContainsErrors)
+			if (!isValid)
 			{
 				//An ErrorProvider control should
 				MessageBox.Show("The form contains errors!",
 					"Error",
 					MessageBoxButtons.OK,
 					MessageBoxIcon.Error);
+
+				return;
 			}
 
-			//TODO Logic for adding the participant to the list bellow
+			try
+			{
+				var participant = new Participant(lastName, firstName, birthDate, gender, ssn);
+				//TODO Logic for adding the participant to the list bellow
+			}
+			catch (InvalidBirthDateException ex)
+			{
+				//Expected exception
+				MessageBox.Show(string.Format("The birth date {0} is invalid!", ex.BirthDate));
+			}
+			catch (Exception)
+			{
+				//UnExpected exception
+				MessageBox.Show("An exception has been encountered! Please contact the technical support.");
+
+				//Log the exception using:
+				// - Log4Net
+				// - Application Insights
+			}
+			finally
+			{
+				Debug.WriteLine("Always executed");
+			}
 		}
 
 		private void tbLastName_Validating(object sender, System.ComponentModel.CancelEventArgs e)
@@ -80,13 +113,11 @@ namespace ValidationExceptionHandling
 				epFirstName.SetError((Control) sender, "The First Name should not be empty!");
 			}
 		}
-		#endregion
-
+		
 		private void tbFirstName_Validated(object sender, EventArgs e)
 		{
 			epFirstName.Clear();
-		}
-
-		
+		}	
+		#endregion
 	}
 }

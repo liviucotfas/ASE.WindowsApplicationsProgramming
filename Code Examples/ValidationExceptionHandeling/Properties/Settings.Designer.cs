@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ValidationExceptionHandling.Properties {
+namespace ValidationCustomExceptions.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

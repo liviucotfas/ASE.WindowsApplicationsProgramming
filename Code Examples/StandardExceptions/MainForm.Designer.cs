@@ -40,7 +40,7 @@
 			// btnCalculate
 			// 
 			this.btnCalculate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-			this.btnCalculate.Location = new System.Drawing.Point(80, 139);
+			this.btnCalculate.Location = new System.Drawing.Point(390, 26);
 			this.btnCalculate.Name = "btnCalculate";
 			this.btnCalculate.Size = new System.Drawing.Size(75, 23);
 			this.btnCalculate.TabIndex = 9;
@@ -51,7 +51,7 @@
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(111, 74);
+			this.label1.Location = new System.Drawing.Point(182, 31);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(12, 13);
 			this.label1.TabIndex = 8;
@@ -59,7 +59,7 @@
 			// 
 			// tbResult
 			// 
-			this.tbResult.Location = new System.Drawing.Point(39, 178);
+			this.tbResult.Location = new System.Drawing.Point(485, 28);
 			this.tbResult.Name = "tbResult";
 			this.tbResult.ReadOnly = true;
 			this.tbResult.Size = new System.Drawing.Size(156, 20);
@@ -67,7 +67,7 @@
 			// 
 			// tbValue2
 			// 
-			this.tbValue2.Location = new System.Drawing.Point(39, 103);
+			this.tbValue2.Location = new System.Drawing.Point(214, 28);
 			this.tbValue2.Name = "tbValue2";
 			this.tbValue2.Size = new System.Drawing.Size(156, 20);
 			this.tbValue2.TabIndex = 6;
@@ -75,7 +75,7 @@
 			// 
 			// tbValue1
 			// 
-			this.tbValue1.Location = new System.Drawing.Point(39, 38);
+			this.tbValue1.Location = new System.Drawing.Point(6, 28);
 			this.tbValue1.Name = "tbValue1";
 			this.tbValue1.Size = new System.Drawing.Size(156, 20);
 			this.tbValue1.TabIndex = 5;
@@ -88,9 +88,9 @@
 			this.groupBox1.Controls.Add(this.tbValue2);
 			this.groupBox1.Controls.Add(this.label1);
 			this.groupBox1.Controls.Add(this.tbResult);
-			this.groupBox1.Location = new System.Drawing.Point(12, 22);
+			this.groupBox1.Location = new System.Drawing.Point(12, 8);
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(246, 226);
+			this.groupBox1.Size = new System.Drawing.Size(654, 65);
 			this.groupBox1.TabIndex = 10;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "FormatException, DivisonByZeroException";
@@ -99,7 +99,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(637, 473);
+			this.ClientSize = new System.Drawing.Size(672, 77);
 			this.Controls.Add(this.groupBox1);
 			this.Name = "MainForm";
 			this.Text = "Standard Exceptions";
