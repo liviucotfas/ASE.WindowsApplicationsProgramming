@@ -77,7 +77,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MouseEvents", "MouseEvents\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08. Windows Forms - Keyboard, Mouse Events", "08. Windows Forms - Keyboard, Mouse Events", "{9DA02F82-AD1C-4834-8C96-2836B80B1ECD}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09. Windows Forms - Validation", "09. Windows Forms - Validation", "{E88FB65B-BFCB-437C-BF9E-690FBF664FBC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09. Windows Forms - Validation, Exceptions", "09. Windows Forms - Validation, Exceptions", "{E88FB65B-BFCB-437C-BF9E-690FBF664FBC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyEventsNumericTextBox", "KeyEventsNumericTextBox\KeyEventsNumericTextBox.csproj", "{7DCB57BF-028E-4722-8E1C-A5ED0D4B07A5}"
 EndProject
@@ -96,6 +96,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "11. WindowsForms - Serialization, TextFiles, XML", "11. WindowsForms - Serialization, TextFiles, XML", "{21CE9FC6-1F31-4200-9DC1-BD38FB9AC299}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StandardExceptions", "StandardExceptions\StandardExceptions.csproj", "{23D43178-0B76-40BD-92FB-EF94113562EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializationTextFileXML", "SerializationTextFileXML\SerializationTextFileXML.csproj", "{4BDFA78C-CAFF-4B6C-8AA7-15DC655DB34A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -359,6 +361,14 @@ Global
 		{23D43178-0B76-40BD-92FB-EF94113562EF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{23D43178-0B76-40BD-92FB-EF94113562EF}.Release|x86.ActiveCfg = Release|Any CPU
 		{23D43178-0B76-40BD-92FB-EF94113562EF}.Release|x86.Build.0 = Release|Any CPU
+		{4BDFA78C-CAFF-4B6C-8AA7-15DC655DB34A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BDFA78C-CAFF-4B6C-8AA7-15DC655DB34A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BDFA78C-CAFF-4B6C-8AA7-15DC655DB34A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4BDFA78C-CAFF-4B6C-8AA7-15DC655DB34A}.Debug|x86.Build.0 = Debug|Any CPU
+		{4BDFA78C-CAFF-4B6C-8AA7-15DC655DB34A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BDFA78C-CAFF-4B6C-8AA7-15DC655DB34A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BDFA78C-CAFF-4B6C-8AA7-15DC655DB34A}.Release|x86.ActiveCfg = Release|Any CPU
+		{4BDFA78C-CAFF-4B6C-8AA7-15DC655DB34A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -396,5 +406,6 @@ Global
 		{18A2F0BE-9379-49A6-9561-94AB2FC0D9AE} = {E88FB65B-BFCB-437C-BF9E-690FBF664FBC}
 		{73AFE8EC-1C36-41F2-B5FD-F03B1889E294} = {BF9CD386-61B2-438C-8F74-D95ED547CF6A}
 		{23D43178-0B76-40BD-92FB-EF94113562EF} = {E88FB65B-BFCB-437C-BF9E-690FBF664FBC}
+		{4BDFA78C-CAFF-4B6C-8AA7-15DC655DB34A} = {21CE9FC6-1F31-4200-9DC1-BD38FB9AC299}
 	EndGlobalSection
 EndGlobal
