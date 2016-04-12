@@ -12,8 +12,8 @@ namespace Operators
 			//TODO
 			//personList[0] = ((Person)personList[0]) + 10;
 
-			//int age = p; //error
-			int age = (int)p;
+			//int age = p; //cast implicit
+			int age = (int)p; //cast explicit
 			Console.WriteLine("Age: {0}", age);
 
 			if(p<p2)

@@ -7,8 +7,8 @@
     <ProjectGuid>{18A2F0BE-9379-49A6-9561-94AB2FC0D9AE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ValidationExceptionHandling</RootNamespace>
-    <AssemblyName>ValidationExceptionHandling</AssemblyName>
+    <RootNamespace>ValidationCustomExceptions</RootNamespace>
+    <AssemblyName>ValidationCustomExceptions</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -47,7 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Enums.cs" />
-    <Compile Include="Entities\InvalidAgeException.cs" />
+    <Compile Include="Entities\InvalidBirthDateException.cs" />
     <Compile Include="Entities\Participant.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>

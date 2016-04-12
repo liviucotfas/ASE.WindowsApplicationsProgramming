@@ -7,19 +7,20 @@ namespace ListViewSample
 {
 	public partial class MainForm : Form
 	{
-		#region Properties
+		#region Attributes
 		private readonly List<Participant> _participants;
 		private ListViewGroup _lvgChildren;
 		private ListViewGroup _lvgAdults;
 		#endregion
 
-		#region Methods
 		public MainForm()
 		{
 			InitializeComponent();
 
 			_participants = new List<Participant>();
 		}
+
+		#region Methods
 		public void DisplayParticipants()
 		{
 			lvParticipants.Items.Clear();

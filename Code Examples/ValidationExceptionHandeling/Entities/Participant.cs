@@ -1,7 +1,8 @@
 ﻿using System;
+using ValidationCustomExceptions.Entities;
 using ValidationExceptionHandeling.Entities;
 
-namespace ValidationExceptionHandling.Entities
+namespace Validation.Entities
 {
 	internal class Participant
 	{
@@ -9,7 +10,16 @@ namespace ValidationExceptionHandling.Entities
 		public string FirstName { get; set; }
 
 		#region BirthDate
-		public DateTime BirthDate { get; set; }
+		private DateTime _birthDate;
+		public DateTime BirthDate {
+			get { return _birthDate; }
+			set
+			{
+				if(value >= DateTime.Today)
+					throw new InvalidBirthDateException(value);
+				_birthDate = value;
+			}
+		}
 		#endregion
 
 		public GenderEnum Gender { get; set; }

@@ -63,8 +63,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBaseDataSetAccess", "Da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBaseDataSetSQLServer", "DataBaseDataSetSQLServer\DataBaseDataSetSQLServer.csproj", "{F99E8976-7006-42C9-A803-4FCBD3476578}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationTextFile", "ValidationTextFile\ValidationTextFile.csproj", "{7FD6619A-4E93-4131-AEE1-B4854152C753}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializableCustomCollectionEvents", "SerializableCustomCollectionEvents\SerializableCustomCollectionEvents.csproj", "{1F1E6E78-06EF-453B-926B-8F1BFCB8C172}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodParameters", "MethodParameters\MethodParameters.csproj", "{7F11E547-3A0E-4B67-BF3A-87658CD4D230}"
@@ -79,7 +77,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MouseEvents", "MouseEvents\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08. Windows Forms - Keyboard, Mouse Events", "08. Windows Forms - Keyboard, Mouse Events", "{9DA02F82-AD1C-4834-8C96-2836B80B1ECD}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09. Windows Forms - Validation", "09. Windows Forms - Validation", "{E88FB65B-BFCB-437C-BF9E-690FBF664FBC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09. Windows Forms - Validation, Exceptions", "09. Windows Forms - Validation, Exceptions", "{E88FB65B-BFCB-437C-BF9E-690FBF664FBC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyEventsNumericTextBox", "KeyEventsNumericTextBox\KeyEventsNumericTextBox.csproj", "{7DCB57BF-028E-4722-8E1C-A5ED0D4B07A5}"
 EndProject
@@ -89,7 +87,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeViewSample", "TreeViewS
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07. Windows Forms - Menus", "07. Windows Forms - Menus", "{0F901F73-692C-41A2-8496-548DE1430391}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationExceptionHandling", "ValidationExceptionHandeling\ValidationExceptionHandling.csproj", "{18A2F0BE-9379-49A6-9561-94AB2FC0D9AE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationCustomExceptions", "ValidationExceptionHandeling\ValidationCustomExceptions.csproj", "{18A2F0BE-9379-49A6-9561-94AB2FC0D9AE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListViewSample", "ListViewSample\ListViewSample.csproj", "{73AFE8EC-1C36-41F2-B5FD-F03B1889E294}"
 EndProject
@@ -98,6 +96,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "11. WindowsForms - Serialization, TextFiles, XML", "11. WindowsForms - Serialization, TextFiles, XML", "{21CE9FC6-1F31-4200-9DC1-BD38FB9AC299}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StandardExceptions", "StandardExceptions\StandardExceptions.csproj", "{23D43178-0B76-40BD-92FB-EF94113562EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializationTextFileXML", "SerializationTextFileXML\SerializationTextFileXML.csproj", "{4BDFA78C-CAFF-4B6C-8AA7-15DC655DB34A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -281,14 +281,6 @@ Global
 		{F99E8976-7006-42C9-A803-4FCBD3476578}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F99E8976-7006-42C9-A803-4FCBD3476578}.Release|x86.ActiveCfg = Release|Any CPU
 		{F99E8976-7006-42C9-A803-4FCBD3476578}.Release|x86.Build.0 = Release|Any CPU
-		{7FD6619A-4E93-4131-AEE1-B4854152C753}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7FD6619A-4E93-4131-AEE1-B4854152C753}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7FD6619A-4E93-4131-AEE1-B4854152C753}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{7FD6619A-4E93-4131-AEE1-B4854152C753}.Debug|x86.Build.0 = Debug|Any CPU
-		{7FD6619A-4E93-4131-AEE1-B4854152C753}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7FD6619A-4E93-4131-AEE1-B4854152C753}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7FD6619A-4E93-4131-AEE1-B4854152C753}.Release|x86.ActiveCfg = Release|Any CPU
-		{7FD6619A-4E93-4131-AEE1-B4854152C753}.Release|x86.Build.0 = Release|Any CPU
 		{1F1E6E78-06EF-453B-926B-8F1BFCB8C172}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1F1E6E78-06EF-453B-926B-8F1BFCB8C172}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F1E6E78-06EF-453B-926B-8F1BFCB8C172}.Debug|x86.ActiveCfg = Debug|Any CPU
@@ -369,6 +361,14 @@ Global
 		{23D43178-0B76-40BD-92FB-EF94113562EF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{23D43178-0B76-40BD-92FB-EF94113562EF}.Release|x86.ActiveCfg = Release|Any CPU
 		{23D43178-0B76-40BD-92FB-EF94113562EF}.Release|x86.Build.0 = Release|Any CPU
+		{4BDFA78C-CAFF-4B6C-8AA7-15DC655DB34A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BDFA78C-CAFF-4B6C-8AA7-15DC655DB34A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BDFA78C-CAFF-4B6C-8AA7-15DC655DB34A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4BDFA78C-CAFF-4B6C-8AA7-15DC655DB34A}.Debug|x86.Build.0 = Debug|Any CPU
+		{4BDFA78C-CAFF-4B6C-8AA7-15DC655DB34A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BDFA78C-CAFF-4B6C-8AA7-15DC655DB34A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BDFA78C-CAFF-4B6C-8AA7-15DC655DB34A}.Release|x86.ActiveCfg = Release|Any CPU
+		{4BDFA78C-CAFF-4B6C-8AA7-15DC655DB34A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -396,7 +396,6 @@ Global
 		{5175D0A8-9C62-43B9-B760-E9941F61A6F4} = {A8F9A7BF-5AF8-4C23-A99D-6737FCAE4F2B}
 		{995832A2-5ECA-4A9E-910C-A14FCC04E2CD} = {A8F9A7BF-5AF8-4C23-A99D-6737FCAE4F2B}
 		{F99E8976-7006-42C9-A803-4FCBD3476578} = {A8F9A7BF-5AF8-4C23-A99D-6737FCAE4F2B}
-		{7FD6619A-4E93-4131-AEE1-B4854152C753} = {E88FB65B-BFCB-437C-BF9E-690FBF664FBC}
 		{1F1E6E78-06EF-453B-926B-8F1BFCB8C172} = {BF3BF946-C947-4AFC-8ABB-9C2ED1A0E687}
 		{7F11E547-3A0E-4B67-BF3A-87658CD4D230} = {80D947C5-D1E9-4814-BD59-2E49DF41D524}
 		{B7D5F54B-FF43-44B0-8775-5DD0DCC03E3C} = {A768DE76-513E-401C-A677-501E4BBA480E}
@@ -407,5 +406,6 @@ Global
 		{18A2F0BE-9379-49A6-9561-94AB2FC0D9AE} = {E88FB65B-BFCB-437C-BF9E-690FBF664FBC}
 		{73AFE8EC-1C36-41F2-B5FD-F03B1889E294} = {BF9CD386-61B2-438C-8F74-D95ED547CF6A}
 		{23D43178-0B76-40BD-92FB-EF94113562EF} = {E88FB65B-BFCB-437C-BF9E-690FBF664FBC}
+		{4BDFA78C-CAFF-4B6C-8AA7-15DC655DB34A} = {21CE9FC6-1F31-4200-9DC1-BD38FB9AC299}
 	EndGlobalSection
 EndGlobal
