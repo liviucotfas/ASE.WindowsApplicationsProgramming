@@ -1,4 +1,4 @@
-namespace MyUserControl
+namespace ClockUserControl
 {
     partial class Ceas
     {

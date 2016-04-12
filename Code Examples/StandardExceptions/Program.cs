@@ -24,7 +24,7 @@ namespace StandardExceptions
 
 		private static void Application_ThreadException(object sender, System.Threading.ThreadExceptionEventArgs e)
 		{
-			Debug.WriteLine(e.Exception.Message);
+			MessageBox.Show(e.Exception.Message);
 		}
 	}
 }
