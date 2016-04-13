@@ -1,8 +1,8 @@
 using System;
-using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Windows.Forms;
 
-namespace AplicatieTest
+namespace ClockUserControlApp
 {
     public partial class MainForm : Form
     {
@@ -40,19 +40,19 @@ namespace AplicatieTest
             string[] sir;
             string date = e.Data.GetData(DataFormats.Text).ToString();
             sir = date.Split(':');
-            ceas1.Ora = Int32.Parse(sir[0]);
-            ceas1.Min = Int32.Parse(sir[1]);
+            ceas.Ora = int.Parse(sir[0]);
+            ceas.Min = int.Parse(sir[1]);
             //Setam acceasi ora/min si pentru alarma =>va porni alarma
-            ceas1.OraAlarm = ceas1.Ora;
-            ceas1.MinAlarm = ceas1.Min;
-            ceas1.Invalidate();
+            ceas.OraAlarm = ceas.Ora;
+            ceas.MinAlarm = ceas.Min;
+            ceas.Invalidate();
         }
 
         private void btnGetSystemTime_Click(object sender, EventArgs e)
         {
-            ceas1.Ora = DateTime.Now.Hour;
-            ceas1.Min = DateTime.Now.Minute;
-            ceas1.Sec = DateTime.Now.Second;
+            ceas.Ora = DateTime.Now.Hour;
+            ceas.Min = DateTime.Now.Minute;
+            ceas.Sec = DateTime.Now.Second;
         }
     }
 }

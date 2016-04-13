@@ -27,8 +27,8 @@ namespace StandardExceptions
 			{
 				MessageBox.Show(ex.Message);
 
-				//ReThrowing the exception
-				throw; //Handled by Program.Application_ThreadException
+				//Rethrowing the exception
+				//throw; //Handled by Program.Application_ThreadException
 			}
 			catch (DivideByZeroException ex)
 			{

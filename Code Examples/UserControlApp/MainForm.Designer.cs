@@ -1,4 +1,6 @@
-namespace AplicatieTest
+using ClockUserControl;
+
+namespace ClockUserControlApp
 {
     partial class MainForm
     {
@@ -30,7 +32,7 @@ namespace AplicatieTest
         {
 			this.tbOra = new System.Windows.Forms.TextBox();
 			this.btnGetSystemTime = new System.Windows.Forms.Button();
-			this.ceas1 = new MyUserControl.Ceas();
+			this.ceas = new Ceas();
 			this.label1 = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
@@ -52,22 +54,22 @@ namespace AplicatieTest
 			this.btnGetSystemTime.UseVisualStyleBackColor = true;
 			this.btnGetSystemTime.Click += new System.EventHandler(this.btnGetSystemTime_Click);
 			// 
-			// ceas1
+			// ceas
 			// 
-			this.ceas1.AllowDrop = true;
-			this.ceas1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.ceas1.Location = new System.Drawing.Point(9, 13);
-			this.ceas1.Min = 9;
-			this.ceas1.MinAlarm = 36;
-			this.ceas1.Name = "ceas1";
-			this.ceas1.Ora = 0;
-			this.ceas1.OraAlarm = 4;
-			this.ceas1.Sec = 2;
-			this.ceas1.Size = new System.Drawing.Size(208, 189);
-			this.ceas1.TabIndex = 0;
-			this.ceas1.Suna += new System.EventHandler(this.ceas1_Suna);
-			this.ceas1.DragDrop += new System.Windows.Forms.DragEventHandler(this.ceas1_DragDrop);
-			this.ceas1.DragEnter += new System.Windows.Forms.DragEventHandler(this.ceas1_DragEnter);
+			this.ceas.AllowDrop = true;
+			this.ceas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.ceas.Location = new System.Drawing.Point(9, 13);
+			this.ceas.Min = 9;
+			this.ceas.MinAlarm = 36;
+			this.ceas.Name = "ceas";
+			this.ceas.Ora = 0;
+			this.ceas.OraAlarm = 4;
+			this.ceas.Sec = 9;
+			this.ceas.Size = new System.Drawing.Size(208, 189);
+			this.ceas.TabIndex = 0;
+			this.ceas.Suna += new System.EventHandler(this.ceas1_Suna);
+			this.ceas.DragDrop += new System.Windows.Forms.DragEventHandler(this.ceas1_DragDrop);
+			this.ceas.DragEnter += new System.Windows.Forms.DragEventHandler(this.ceas1_DragEnter);
 			// 
 			// label1
 			// 
@@ -86,7 +88,7 @@ namespace AplicatieTest
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.btnGetSystemTime);
 			this.Controls.Add(this.tbOra);
-			this.Controls.Add(this.ceas1);
+			this.Controls.Add(this.ceas);
 			this.Name = "MainForm";
 			this.Text = "Clock";
 			this.ResumeLayout(false);
@@ -96,7 +98,7 @@ namespace AplicatieTest
 
         #endregion
 
-        private MyUserControl.Ceas ceas1;
+        private Ceas ceas;
         public System.Windows.Forms.TextBox tbOra;
         private System.Windows.Forms.Button btnGetSystemTime;
         private System.Windows.Forms.Label label1;
