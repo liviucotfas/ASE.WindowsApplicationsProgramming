@@ -67,7 +67,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializableCustomCollectio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodParameters", "MethodParameters\MethodParameters.csproj", "{7F11E547-3A0E-4B67-BF3A-87658CD4D230}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "13. Windows Forms - Custom Controls", "13. Windows Forms - Custom Controls", "{718D2BE5-3500-483F-BC23-FD1336336134}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "13. Windows Forms - Graphics, Custom Controls", "13. Windows Forms - Graphics, Custom Controls", "{718D2BE5-3500-483F-BC23-FD1336336134}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCalculator", "SimpleCalculator\SimpleCalculator.csproj", "{B7D5F54B-FF43-44B0-8775-5DD0DCC03E3C}"
 EndProject
@@ -91,13 +91,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationCustomExceptions"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListViewSample", "ListViewSample\ListViewSample.csproj", "{73AFE8EC-1C36-41F2-B5FD-F03B1889E294}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "12. Windows Forms - Multiple Forms", "12. Windows Forms - Multiple Forms", "{BF3BF946-C947-4AFC-8ABB-9C2ED1A0E687}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "12. Windows Forms - Dialogs", "12. Windows Forms - Dialogs", "{BF3BF946-C947-4AFC-8ABB-9C2ED1A0E687}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "11. WindowsForms - Serialization, TextFiles, XML", "11. WindowsForms - Serialization, TextFiles, XML", "{21CE9FC6-1F31-4200-9DC1-BD38FB9AC299}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StandardExceptions", "StandardExceptions\StandardExceptions.csproj", "{23D43178-0B76-40BD-92FB-EF94113562EF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializationTextFileXML", "SerializationTextFileXML\SerializationTextFileXML.csproj", "{4BDFA78C-CAFF-4B6C-8AA7-15DC655DB34A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBindingDialogs", "DataBindingDialogs\DataBindingDialogs.csproj", "{1967F6BA-DB75-457A-8B0B-247146B76E1C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -369,6 +371,14 @@ Global
 		{4BDFA78C-CAFF-4B6C-8AA7-15DC655DB34A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4BDFA78C-CAFF-4B6C-8AA7-15DC655DB34A}.Release|x86.ActiveCfg = Release|Any CPU
 		{4BDFA78C-CAFF-4B6C-8AA7-15DC655DB34A}.Release|x86.Build.0 = Release|Any CPU
+		{1967F6BA-DB75-457A-8B0B-247146B76E1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1967F6BA-DB75-457A-8B0B-247146B76E1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1967F6BA-DB75-457A-8B0B-247146B76E1C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1967F6BA-DB75-457A-8B0B-247146B76E1C}.Debug|x86.Build.0 = Debug|Any CPU
+		{1967F6BA-DB75-457A-8B0B-247146B76E1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1967F6BA-DB75-457A-8B0B-247146B76E1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1967F6BA-DB75-457A-8B0B-247146B76E1C}.Release|x86.ActiveCfg = Release|Any CPU
+		{1967F6BA-DB75-457A-8B0B-247146B76E1C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -407,5 +417,6 @@ Global
 		{73AFE8EC-1C36-41F2-B5FD-F03B1889E294} = {BF9CD386-61B2-438C-8F74-D95ED547CF6A}
 		{23D43178-0B76-40BD-92FB-EF94113562EF} = {E88FB65B-BFCB-437C-BF9E-690FBF664FBC}
 		{4BDFA78C-CAFF-4B6C-8AA7-15DC655DB34A} = {21CE9FC6-1F31-4200-9DC1-BD38FB9AC299}
+		{1967F6BA-DB75-457A-8B0B-247146B76E1C} = {BF3BF946-C947-4AFC-8ABB-9C2ED1A0E687}
 	EndGlobalSection
 EndGlobal

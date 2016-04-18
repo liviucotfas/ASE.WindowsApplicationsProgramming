@@ -117,7 +117,8 @@ namespace ClockUserControl
             r.X += 5; r.Y += 5; r.Height -= 10; r.Width -= 10;
             //in cadrul acestui dreptunghi vom desena un cerc
             int raza = r.Height / 2 - 10;
-            //preluam contextul grafic
+            
+			//preluam contextul grafic
             Graphics g = e.Graphics;
             g.DrawEllipse(pen, r);
             //definim coordonatele de inceput pentru a putea trasa cadranul ceasului
