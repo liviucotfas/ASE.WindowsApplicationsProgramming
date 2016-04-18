@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using DataBindingDialogs.Annotations;
-using DataBindingDialogs.Entities;
+using DataBindingSample.Entities;
 
 namespace DataBindingDialogs.ViewModel
 {

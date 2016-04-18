@@ -1,4 +1,6 @@
-﻿namespace DataBindingDialogs
+﻿using DataBindingSample.Entities;
+
+namespace DataBindingSample
 {
 	partial class MainForm
 	{
@@ -127,7 +129,6 @@
 			// dgvParticipants
 			// 
 			this.dgvParticipants.AllowUserToAddRows = false;
-			this.dgvParticipants.AllowUserToDeleteRows = false;
 			this.dgvParticipants.AllowUserToOrderColumns = true;
 			this.dgvParticipants.AutoGenerateColumns = false;
 			this.dgvParticipants.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -138,27 +139,24 @@
 			this.dgvParticipants.DataSource = this.participantBindingSource;
 			this.dgvParticipants.Location = new System.Drawing.Point(13, 138);
 			this.dgvParticipants.Name = "dgvParticipants";
-			this.dgvParticipants.ReadOnly = true;
 			this.dgvParticipants.Size = new System.Drawing.Size(686, 230);
 			this.dgvParticipants.TabIndex = 62;
 			// 
 			// participantBindingSource
 			// 
-			this.participantBindingSource.DataSource = typeof(DataBindingDialogs.Entities.Participant);
+			this.participantBindingSource.DataSource = typeof(Participant);
 			// 
 			// lastNameDataGridViewTextBoxColumn
 			// 
 			this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
 			this.lastNameDataGridViewTextBoxColumn.HeaderText = "LastName";
 			this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
-			this.lastNameDataGridViewTextBoxColumn.ReadOnly = true;
 			// 
 			// firstNameDataGridViewTextBoxColumn
 			// 
 			this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
 			this.firstNameDataGridViewTextBoxColumn.HeaderText = "FirstName";
 			this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
-			this.firstNameDataGridViewTextBoxColumn.ReadOnly = true;
 			// 
 			// birthDateDataGridViewTextBoxColumn
 			// 
@@ -194,10 +192,10 @@
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.DateTimePicker dtpBirthDate;
 		private System.Windows.Forms.DataGridView dgvParticipants;
+		private System.Windows.Forms.BindingSource participantBindingSource;
 		private System.Windows.Forms.DataGridViewTextBoxColumn lastNameDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn firstNameDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn birthDateDataGridViewTextBoxColumn;
-		private System.Windows.Forms.BindingSource participantBindingSource;
 	}
 }
 

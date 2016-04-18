@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DataBindingDialogs.Entities
+namespace DataBindingSample.Entities
 {
 	internal class Participant
 	{

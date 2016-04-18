@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 using DataBindingDialogs.ViewModel;
 
-namespace DataBindingDialogs
+namespace DataBindingSample
 {
 	public partial class MainForm : Form
 	{
