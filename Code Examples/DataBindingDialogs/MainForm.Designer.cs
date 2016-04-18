@@ -28,10 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.lvParticipants = new System.Windows.Forms.ListView();
-			this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+			this.components = new System.ComponentModel.Container();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.btnAdd = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
@@ -40,38 +37,15 @@
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.dtpBirthDate = new System.Windows.Forms.DateTimePicker();
+			this.dgvParticipants = new System.Windows.Forms.DataGridView();
+			this.participantBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.birthDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.groupBox1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dgvParticipants)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.participantBindingSource)).BeginInit();
 			this.SuspendLayout();
-			// 
-			// lvParticipants
-			// 
-			this.lvParticipants.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3});
-			this.lvParticipants.FullRowSelect = true;
-			this.lvParticipants.GridLines = true;
-			this.lvParticipants.Location = new System.Drawing.Point(12, 137);
-			this.lvParticipants.Name = "lvParticipants";
-			this.lvParticipants.Size = new System.Drawing.Size(687, 234);
-			this.lvParticipants.TabIndex = 62;
-			this.lvParticipants.UseCompatibleStateImageBehavior = false;
-			this.lvParticipants.View = System.Windows.Forms.View.Details;
-			// 
-			// columnHeader1
-			// 
-			this.columnHeader1.Text = "Last Name";
-			this.columnHeader1.Width = 150;
-			// 
-			// columnHeader2
-			// 
-			this.columnHeader2.Text = "First Name";
-			this.columnHeader2.Width = 150;
-			// 
-			// columnHeader3
-			// 
-			this.columnHeader3.Text = "Birth Date";
-			this.columnHeader3.Width = 120;
 			// 
 			// groupBox1
 			// 
@@ -100,6 +74,7 @@
 			this.btnAdd.TabIndex = 52;
 			this.btnAdd.Text = "Add Participant";
 			this.btnAdd.UseVisualStyleBackColor = false;
+			this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
 			// 
 			// label1
 			// 
@@ -149,27 +124,67 @@
 			this.dtpBirthDate.Size = new System.Drawing.Size(200, 20);
 			this.dtpBirthDate.TabIndex = 5;
 			// 
+			// dgvParticipants
+			// 
+			this.dgvParticipants.AllowUserToAddRows = false;
+			this.dgvParticipants.AllowUserToDeleteRows = false;
+			this.dgvParticipants.AllowUserToOrderColumns = true;
+			this.dgvParticipants.AutoGenerateColumns = false;
+			this.dgvParticipants.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgvParticipants.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.lastNameDataGridViewTextBoxColumn,
+            this.firstNameDataGridViewTextBoxColumn,
+            this.birthDateDataGridViewTextBoxColumn});
+			this.dgvParticipants.DataSource = this.participantBindingSource;
+			this.dgvParticipants.Location = new System.Drawing.Point(13, 138);
+			this.dgvParticipants.Name = "dgvParticipants";
+			this.dgvParticipants.ReadOnly = true;
+			this.dgvParticipants.Size = new System.Drawing.Size(686, 230);
+			this.dgvParticipants.TabIndex = 62;
+			// 
+			// participantBindingSource
+			// 
+			this.participantBindingSource.DataSource = typeof(DataBindingDialogs.Entities.Participant);
+			// 
+			// lastNameDataGridViewTextBoxColumn
+			// 
+			this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
+			this.lastNameDataGridViewTextBoxColumn.HeaderText = "LastName";
+			this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
+			this.lastNameDataGridViewTextBoxColumn.ReadOnly = true;
+			// 
+			// firstNameDataGridViewTextBoxColumn
+			// 
+			this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
+			this.firstNameDataGridViewTextBoxColumn.HeaderText = "FirstName";
+			this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
+			this.firstNameDataGridViewTextBoxColumn.ReadOnly = true;
+			// 
+			// birthDateDataGridViewTextBoxColumn
+			// 
+			this.birthDateDataGridViewTextBoxColumn.DataPropertyName = "BirthDate";
+			this.birthDateDataGridViewTextBoxColumn.HeaderText = "BirthDate";
+			this.birthDateDataGridViewTextBoxColumn.Name = "birthDateDataGridViewTextBoxColumn";
+			this.birthDateDataGridViewTextBoxColumn.ReadOnly = true;
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(707, 380);
-			this.Controls.Add(this.lvParticipants);
+			this.Controls.Add(this.dgvParticipants);
 			this.Controls.Add(this.groupBox1);
 			this.Name = "MainForm";
 			this.Text = "WinAppProgramming Run";
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dgvParticipants)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.participantBindingSource)).EndInit();
 			this.ResumeLayout(false);
 
 		}
 
 		#endregion
-
-		private System.Windows.Forms.ListView lvParticipants;
-		private System.Windows.Forms.ColumnHeader columnHeader1;
-		private System.Windows.Forms.ColumnHeader columnHeader2;
-		private System.Windows.Forms.ColumnHeader columnHeader3;
 		private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.Button btnAdd;
 		private System.Windows.Forms.Label label1;
@@ -178,6 +193,11 @@
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.DateTimePicker dtpBirthDate;
+		private System.Windows.Forms.DataGridView dgvParticipants;
+		private System.Windows.Forms.DataGridViewTextBoxColumn lastNameDataGridViewTextBoxColumn;
+		private System.Windows.Forms.DataGridViewTextBoxColumn firstNameDataGridViewTextBoxColumn;
+		private System.Windows.Forms.DataGridViewTextBoxColumn birthDateDataGridViewTextBoxColumn;
+		private System.Windows.Forms.BindingSource participantBindingSource;
 	}
 }
 

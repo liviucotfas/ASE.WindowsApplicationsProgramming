@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DataBindingDialogs.Properties
+namespace PrintingSample.Properties
 {
 
 

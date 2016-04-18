@@ -4,11 +4,10 @@ using System.IO;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Windows.Forms;
-using System.Xml;
 using System.Xml.Serialization;
 using SerializationTextFileXML.Entities;
 
-namespace SerializationTextFileXML
+namespace SerializationBinaryXMLTextFile
 {
 	public partial class MainForm : Form
 	{
