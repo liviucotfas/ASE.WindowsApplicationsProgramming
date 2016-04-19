@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 using DataBindingDialogs.Annotations;
 using DataBindingSample.Entities;
 
-namespace DataBindingDialogs.ViewModel
+namespace DataBindingSample.ViewModel
 {
 	internal class MainFormViewModel : INotifyPropertyChanged
 	{
