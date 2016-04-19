@@ -9,17 +9,17 @@ namespace SerializableCustomCollectionEvents
 	internal class ColectieComenzi: IEnumerable
 	{
 		#region Proprietati
-		ArrayList listaComenzi;
+		private readonly ArrayList _listaComenzi;
 		public int Lungime
 		{
-			get { return listaComenzi.Count; }
+			get { return _listaComenzi.Count; }
 		}
 		#endregion
 
 		#region Metode
 		public void Adauga(Comanda comanda)
 		{
-			listaComenzi.Add(comanda);
+			_listaComenzi.Add(comanda);
 			//ne abonam la evenimentul de modificare comanda
 			comanda.ModificareComanda += ComandaModificareComanda;
 			// notificam modificarea colectiei (adaugarea unei noi comenzi)
@@ -34,14 +34,14 @@ namespace SerializableCustomCollectionEvents
 
 		public void Goleste()
 		{
-			listaComenzi.Clear();
+			_listaComenzi.Clear();
 			// notificam modificarea colectiei
 			OnModificareColectie(new EventArgs());
 		}
 
 		public void Sterge(Comanda comanda)
 		{
-			listaComenzi.Remove(comanda);
+			_listaComenzi.Remove(comanda);
 			// notificam modificarea colectiei
 			OnModificareColectie(new EventArgs());
 		}
@@ -51,7 +51,7 @@ namespace SerializableCustomCollectionEvents
 		#region Constructor
 		public ColectieComenzi()
 		{
-			listaComenzi = new ArrayList();
+			_listaComenzi = new ArrayList();
 		}
 		#endregion
 
@@ -71,7 +71,7 @@ namespace SerializableCustomCollectionEvents
 
 		public IEnumerator GetEnumerator()
 		{
-			return new ColectieComenziEnum(listaComenzi);
+			return new ColectieComenziEnum(_listaComenzi);
 		}
 		#endregion
 	}

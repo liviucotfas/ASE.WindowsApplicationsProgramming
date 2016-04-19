@@ -19,7 +19,7 @@ namespace DataBaseSQLCommand
         {
             tbAfisare.Text = "";
             
-            const string stringSql = "select * from Studenti";
+            const string stringSql = "SELECT * FROM Studenti";
             try
             {
                 _sqlConnection.Open();
@@ -43,9 +43,9 @@ namespace DataBaseSQLCommand
         {
 			var sqlCommand = new SqlCommand("select Max(Cod) from Studenti");
             sqlCommand.Connection = _sqlConnection;
-	        var nume = "Student 1";
-			var varsta = 20;
-			var cnp = "0000000000000";
+	        const string nume = "Student 1";
+			const int varsta = 20;
+			const string cnp = "0000000000000";
             try
             {
                 _sqlConnection.Open();

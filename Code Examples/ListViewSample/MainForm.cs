@@ -5,7 +5,7 @@ using ListViewSample.Entities;
 
 namespace ListViewSample
 {
-	public partial class MainForm : Form
+	internal partial class MainForm : Form
 	{
 		#region Attributes
 		private readonly List<Participant> _participants;

@@ -35,13 +35,13 @@ namespace ValidationCustomExceptions
 			
 			if (string.IsNullOrWhiteSpace(lastName))
 			{
-				epLastName.SetError(tbFirstName, "The Last Name should not be empty!");
+				epLastName.SetError(tbFirstName, "Last Name is empty!");
 				isValid = false;
 			}
 
 			if (string.IsNullOrWhiteSpace(firstName))
 			{
-				epFirstName.SetError(tbFirstName, "The First Name should not be empty!");
+				epFirstName.SetError(tbFirstName, "First Name is empty!");
 				isValid = false;
 			}
 
@@ -63,7 +63,7 @@ namespace ValidationCustomExceptions
 			try
 			{
 				var participant = new Participant(lastName, firstName, birthDate, gender, ssn);
-				//TODO Logic for adding the participant to the list bellow
+				//TODO Logic for adding the participant to the ListView
 			}
 			catch (InvalidBirthDateException ex)
 			{
@@ -93,7 +93,7 @@ namespace ValidationCustomExceptions
 			{
 				e.Cancel = true; //prevents the user from changing the focus to another control
 
-				epLastName.SetError((Control)sender, "The Last Name should not be empty!");
+				epLastName.SetError((Control)sender, "Last Name is empty!");
 			}
 		}
 
@@ -110,7 +110,7 @@ namespace ValidationCustomExceptions
 			{
 				e.Cancel = true; //prevents the user from changing the focus to another control
 
-				epFirstName.SetError((Control) sender, "The First Name should not be empty!");
+				epFirstName.SetError((Control) sender, "First Name is empty!");
 			}
 		}
 		

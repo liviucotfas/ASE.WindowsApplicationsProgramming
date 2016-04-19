@@ -1,4 +1,4 @@
-﻿namespace SerializationTextFileXML
+﻿namespace SerializationBinaryXMLTextFile
 {
 	partial class MainForm
 	{
@@ -42,8 +42,11 @@
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
 			this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.btnSerialize = new System.Windows.Forms.ToolStripMenuItem();
-			this.btnDeserialize = new System.Windows.Forms.ToolStripMenuItem();
+			this.btnSerializeBinary = new System.Windows.Forms.ToolStripMenuItem();
+			this.btnDeserializeBinary = new System.Windows.Forms.ToolStripMenuItem();
+			this.xMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.btnSerializeXML = new System.Windows.Forms.ToolStripMenuItem();
+			this.btnDeserializeXML = new System.Windows.Forms.ToolStripMenuItem();
 			this.textFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.btnTextFile = new System.Windows.Forms.ToolStripMenuItem();
 			this.groupBox1.SuspendLayout();
@@ -161,6 +164,7 @@
 			// 
 			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
+            this.xMLToolStripMenuItem,
             this.textFileToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
@@ -171,25 +175,48 @@
 			// fileToolStripMenuItem
 			// 
 			this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnSerialize,
-            this.btnDeserialize});
+            this.btnSerializeBinary,
+            this.btnDeserializeBinary});
 			this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-			this.fileToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
-			this.fileToolStripMenuItem.Text = "Serialization";
+			this.fileToolStripMenuItem.Size = new System.Drawing.Size(118, 20);
+			this.fileToolStripMenuItem.Text = "Binary Serialization";
 			// 
-			// btnSerialize
+			// btnSerializeBinary
 			// 
-			this.btnSerialize.Name = "btnSerialize";
-			this.btnSerialize.Size = new System.Drawing.Size(152, 22);
-			this.btnSerialize.Text = "Serialize";
-			this.btnSerialize.Click += new System.EventHandler(this.btnSerialize_Click);
+			this.btnSerializeBinary.Name = "btnSerializeBinary";
+			this.btnSerializeBinary.Size = new System.Drawing.Size(152, 22);
+			this.btnSerializeBinary.Text = "Serialize";
+			this.btnSerializeBinary.Click += new System.EventHandler(this.btnSerializeBinary_Click);
 			// 
-			// btnDeserialize
+			// btnDeserializeBinary
 			// 
-			this.btnDeserialize.Name = "btnDeserialize";
-			this.btnDeserialize.Size = new System.Drawing.Size(152, 22);
-			this.btnDeserialize.Text = "Deserialize";
-			this.btnDeserialize.Click += new System.EventHandler(this.btnDeserialize_Click);
+			this.btnDeserializeBinary.Name = "btnDeserializeBinary";
+			this.btnDeserializeBinary.Size = new System.Drawing.Size(152, 22);
+			this.btnDeserializeBinary.Text = "Deserialize";
+			this.btnDeserializeBinary.Click += new System.EventHandler(this.btnDeserializeBinary_Click);
+			// 
+			// xMLToolStripMenuItem
+			// 
+			this.xMLToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnSerializeXML,
+            this.btnDeserializeXML});
+			this.xMLToolStripMenuItem.Name = "xMLToolStripMenuItem";
+			this.xMLToolStripMenuItem.Size = new System.Drawing.Size(109, 20);
+			this.xMLToolStripMenuItem.Text = "XML Serialization";
+			// 
+			// btnSerializeXML
+			// 
+			this.btnSerializeXML.Name = "btnSerializeXML";
+			this.btnSerializeXML.Size = new System.Drawing.Size(152, 22);
+			this.btnSerializeXML.Text = "Serialize";
+			this.btnSerializeXML.Click += new System.EventHandler(this.btnSerializeXML_Click);
+			// 
+			// btnDeserializeXML
+			// 
+			this.btnDeserializeXML.Name = "btnDeserializeXML";
+			this.btnDeserializeXML.Size = new System.Drawing.Size(152, 22);
+			this.btnDeserializeXML.Text = "Deserialize";
+			this.btnDeserializeXML.Click += new System.EventHandler(this.btnDeserializeXML_Click);
 			// 
 			// textFileToolStripMenuItem
 			// 
@@ -202,7 +229,7 @@
 			// btnTextFile
 			// 
 			this.btnTextFile.Name = "btnTextFile";
-			this.btnTextFile.Size = new System.Drawing.Size(152, 22);
+			this.btnTextFile.Size = new System.Drawing.Size(107, 22);
 			this.btnTextFile.Text = "Export";
 			this.btnTextFile.Click += new System.EventHandler(this.btnTextFile_Click);
 			// 
@@ -241,10 +268,13 @@
 		private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.MenuStrip menuStrip1;
 		private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem btnSerialize;
-		private System.Windows.Forms.ToolStripMenuItem btnDeserialize;
+		private System.Windows.Forms.ToolStripMenuItem btnSerializeBinary;
+		private System.Windows.Forms.ToolStripMenuItem btnDeserializeBinary;
 		private System.Windows.Forms.ToolStripMenuItem textFileToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem btnTextFile;
+		private System.Windows.Forms.ToolStripMenuItem xMLToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem btnSerializeXML;
+		private System.Windows.Forms.ToolStripMenuItem btnDeserializeXML;
 	}
 }
 
