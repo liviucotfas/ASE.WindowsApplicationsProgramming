@@ -1,3 +1,0 @@
-﻿- Adaugati metode de Stergere si Insert pe obiectul sqlDataAdapter
-
-- Modificati aplicatia si baza de date incat sa utilizati campuri autogenerate pentru cheile primare
