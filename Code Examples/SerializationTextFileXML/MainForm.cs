@@ -75,7 +75,7 @@ namespace SerializationBinaryXMLTextFile
 		private void btnSerializeXML_Click(object sender, EventArgs e)
 		{
 			XmlSerializer serializer = new XmlSerializer(typeof(List<Participant>));
-			using (TextWriter writer = new StreamWriter("SerializedXML.xml"))
+			using (StreamWriter writer = new StreamWriter("SerializedXML.xml"))
 			{
 				serializer.Serialize(writer, _participants);
 			}

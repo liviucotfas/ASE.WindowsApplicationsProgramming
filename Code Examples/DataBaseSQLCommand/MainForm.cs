@@ -19,6 +19,11 @@ namespace DataBaseSQLCommand
             InitializeComponent();
 
 			_participants = new List<Participant>();
+
+
+			//Best practice
+			//Define the connection string in the settings of the application and retrieve it using ConfigurationManager.AppSettings["ConnectionString"]
+			//dbConnection = new SQLiteConnection(ConfigurationManager.AppSettings["ConnectionString"]);
 			_dbConnection = new SQLiteConnection("Data Source=database.db");
         }
 
