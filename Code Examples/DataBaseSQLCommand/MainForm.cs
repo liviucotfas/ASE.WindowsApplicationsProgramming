@@ -5,7 +5,7 @@ using System.Data.SQLite;
 using System.Windows.Forms;
 using DataBaseSQLCommand.Entities;
 
-namespace DataBaseSQLCommand
+namespace DataBaseCommand
 {
     public partial class MainForm : Form
     {
@@ -52,11 +52,19 @@ namespace DataBaseSQLCommand
 				_dbConnection.Open();
 				SQLiteCommand sqlCommand = new SQLiteCommand(stringSql, _dbConnection);
 				SQLiteDataReader sqlReader = sqlCommand.ExecuteReader();
-				while (sqlReader.Read())
+				try
 				{
-					_participants.Add(new Participant((long)sqlReader["Id"], (string)sqlReader["LastName"], (string)sqlReader["FirstName"], DateTime.Parse((string)sqlReader["BirthDate"])));
+					while (sqlReader.Read())
+					{
+						_participants.Add(new Participant((long) sqlReader["Id"], (string) sqlReader["LastName"],
+							(string) sqlReader["FirstName"], DateTime.Parse((string) sqlReader["BirthDate"])));
+					}
 				}
-				sqlReader.Close();
+				finally
+				{
+					// Always call Close when done reading.
+					sqlReader.Close();
+				}
 			}
 			finally
 			{
@@ -69,6 +77,7 @@ namespace DataBaseSQLCommand
 			var dbCommand = new SQLiteCommand();
 			dbCommand.Connection = _dbConnection;
 			dbCommand.CommandText = "insert into Participant(LastName, FirstName, BirthDate) values(@lastName,@firstName,@birthDate);  SELECT last_insert_rowid()";
+
 			try
 			{
 				//1. Add the new participant to the database

@@ -1,4 +1,4 @@
-namespace DataBaseSQLCommand
+namespace DataBaseCommand
 {
     partial class MainForm
     {

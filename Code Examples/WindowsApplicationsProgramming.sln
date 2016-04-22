@@ -57,9 +57,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsPropertyTriggerEventA
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "15. DataBase", "15. DataBase", "{A8F9A7BF-5AF8-4C23-A99D-6737FCAE4F2B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBaseSQLCommand", "DataBaseSQLCommand\DataBaseSQLCommand.csproj", "{5175D0A8-9C62-43B9-B760-E9941F61A6F4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBaseCommand", "DataBaseSQLCommand\DataBaseCommand.csproj", "{5175D0A8-9C62-43B9-B760-E9941F61A6F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBaseDataSetSQLServer", "DataBaseDataSetSQLServer\DataBaseDataSetSQLServer.csproj", "{F99E8976-7006-42C9-A803-4FCBD3476578}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBaseDataAdapter", "DataBaseDataSetSQLServer\DataBaseDataAdapter.csproj", "{F99E8976-7006-42C9-A803-4FCBD3476578}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializableCustomCollectionEvents", "SerializableCustomCollectionEvents\SerializableCustomCollectionEvents.csproj", "{1F1E6E78-06EF-453B-926B-8F1BFCB8C172}"
 EndProject
@@ -116,6 +116,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ip2CountryWebService", "Ip2CountryWebService\Ip2CountryWebService.csproj", "{05DA52C7-A60A-4895-B3BD-AA17E316914D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListViewBasicSample", "ListViewBasicSample\ListViewBasicSample.csproj", "{3C9E2256-3D38-4BCA-ACA4-0B5918E320AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClipboardSample", "ClipboardSample\ClipboardSample.csproj", "{A521281E-EA57-4145-9F55-6EE74F065888}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -435,6 +437,14 @@ Global
 		{3C9E2256-3D38-4BCA-ACA4-0B5918E320AE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3C9E2256-3D38-4BCA-ACA4-0B5918E320AE}.Release|x86.ActiveCfg = Release|Any CPU
 		{3C9E2256-3D38-4BCA-ACA4-0B5918E320AE}.Release|x86.Build.0 = Release|Any CPU
+		{A521281E-EA57-4145-9F55-6EE74F065888}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A521281E-EA57-4145-9F55-6EE74F065888}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A521281E-EA57-4145-9F55-6EE74F065888}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A521281E-EA57-4145-9F55-6EE74F065888}.Debug|x86.Build.0 = Debug|Any CPU
+		{A521281E-EA57-4145-9F55-6EE74F065888}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A521281E-EA57-4145-9F55-6EE74F065888}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A521281E-EA57-4145-9F55-6EE74F065888}.Release|x86.ActiveCfg = Release|Any CPU
+		{A521281E-EA57-4145-9F55-6EE74F065888}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -479,5 +489,6 @@ Global
 		{19FADD11-2E7A-4D88-8B7B-3CCF84D4722E} = {74C5D6A4-483F-4925-AE17-ED20131DE41C}
 		{05DA52C7-A60A-4895-B3BD-AA17E316914D} = {74C5D6A4-483F-4925-AE17-ED20131DE41C}
 		{3C9E2256-3D38-4BCA-ACA4-0B5918E320AE} = {BF9CD386-61B2-438C-8F74-D95ED547CF6A}
+		{A521281E-EA57-4145-9F55-6EE74F065888} = {718D2BE5-3500-483F-BC23-FD1336336134}
 	EndGlobalSection
 EndGlobal

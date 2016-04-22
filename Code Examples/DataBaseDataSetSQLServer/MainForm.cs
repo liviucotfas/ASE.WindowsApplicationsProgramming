@@ -3,11 +3,11 @@ using System.Data;
 using System.Data.SQLite;
 using System.Windows.Forms;
 
-namespace DataBaseDataSetSQLServer
+namespace DataBaseDataAdapter
 {
     public partial class MainForm : Form
     {
-	    readonly SQLiteConnection _dbConnection ;
+	    private readonly SQLiteConnection _dbConnection ;
 		private readonly SQLiteDataAdapter _dbDataAdapter;
 	    private readonly DataSet _dsParticipants;
 
@@ -88,6 +88,7 @@ namespace DataBaseDataSetSQLServer
 
 		private void _dbDataAdapter_RowUpdated(object sender, System.Data.Common.RowUpdatedEventArgs e)
 		{
+			//https://msdn.microsoft.com/en-us/library/ks9f57t0%28v=vs.110%29.aspx
 			if (e.StatementType == StatementType.Insert)
 			{
 				var getIdCommand = new SQLiteCommand("SELECT last_insert_rowid()", _dbConnection);

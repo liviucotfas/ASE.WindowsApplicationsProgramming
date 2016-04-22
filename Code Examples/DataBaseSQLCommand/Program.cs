@@ -1,7 +1,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace DataBaseSQLCommand
+namespace DataBaseCommand
 {
 	internal static class Program
     {

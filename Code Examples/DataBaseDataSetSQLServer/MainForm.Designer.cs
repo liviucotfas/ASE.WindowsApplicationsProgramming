@@ -1,4 +1,4 @@
-﻿namespace DataBaseDataSetSQLServer
+﻿namespace DataBaseDataAdapter
 {
     partial class MainForm
     {
