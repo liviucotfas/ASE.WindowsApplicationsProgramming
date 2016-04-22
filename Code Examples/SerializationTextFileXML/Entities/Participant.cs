@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SerializationTextFileXML.Entities
+namespace SerializationBinaryXMLTextFile.Entities
 {
 	[Serializable]
 	public class Participant

@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Windows.Forms;
 using System.Xml.Serialization;
-using SerializationTextFileXML.Entities;
+using SerializationBinaryXMLTextFile.Entities;
 
 namespace SerializationBinaryXMLTextFile
 {
@@ -75,7 +75,7 @@ namespace SerializationBinaryXMLTextFile
 		private void btnSerializeXML_Click(object sender, EventArgs e)
 		{
 			XmlSerializer serializer = new XmlSerializer(typeof(List<Participant>));
-			using (TextWriter writer = new StreamWriter("SerializedXML.xml"))
+			using (StreamWriter writer = new StreamWriter("SerializedXML.xml"))
 			{
 				serializer.Serialize(writer, _participants);
 			}

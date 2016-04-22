@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
-using DataBindingDialogs.ViewModel;
+using DataBindingSample.ViewModel;
 
 namespace DataBindingSample
 {

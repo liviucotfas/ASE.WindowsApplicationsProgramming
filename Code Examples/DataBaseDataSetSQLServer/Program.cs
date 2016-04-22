@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using DataBaseDataAdapter;
 
 namespace DataBaseDataSetSQLServer
 {
@@ -13,7 +14,7 @@ namespace DataBaseDataSetSQLServer
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DataBinding());
+            Application.Run(new MainForm());
         }
     }
 }
