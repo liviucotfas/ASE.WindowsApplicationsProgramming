@@ -8,8 +8,8 @@
     <ProjectGuid>{5FE4AB3E-0809-48CE-BE52-9A18B2DF9609}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ClockUserControl</RootNamespace>
-    <AssemblyName>ClockUserControl</AssemblyName>
+    <RootNamespace>ClockUserControlSample</RootNamespace>
+    <AssemblyName>ClockUserControlSample</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>

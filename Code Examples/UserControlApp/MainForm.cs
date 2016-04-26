@@ -2,7 +2,7 @@ using System;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
-namespace ClockUserControlApp
+namespace ClockUserControlAppSample
 {
     public partial class MainForm : Form
     {

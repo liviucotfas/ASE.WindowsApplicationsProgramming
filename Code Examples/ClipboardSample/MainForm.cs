@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using ClipboardSample.Entities;
 using ClipboardSample.Properties;
 
 namespace ClipboardSample

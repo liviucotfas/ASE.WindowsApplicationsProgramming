@@ -8,8 +8,8 @@
     <ProjectGuid>{0881795D-C8B7-4606-8D46-B9FC940BB5E6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ClockUserControlApp</RootNamespace>
-    <AssemblyName>ClockUserControlApp</AssemblyName>
+    <RootNamespace>ClockUserControlAppSample</RootNamespace>
+    <AssemblyName>ClockUserControlAppSample</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -92,9 +92,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\UserControl\ClockUserControl.csproj">
+    <ProjectReference Include="..\UserControl\ClockUserControlSample.csproj">
       <Project>{5FE4AB3E-0809-48CE-BE52-9A18B2DF9609}</Project>
-      <Name>ClockUserControl</Name>
+      <Name>ClockUserControlSample</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

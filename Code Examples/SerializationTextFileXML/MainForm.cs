@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Windows.Forms;
 using System.Xml.Serialization;
@@ -55,14 +54,14 @@ namespace SerializationBinaryXMLTextFile
 		#region Binary
 		private void btnSerializeBinary_Click(object sender, EventArgs e)
 		{
-			IFormatter formatter = new BinaryFormatter();
+			BinaryFormatter formatter = new BinaryFormatter();
 			using (FileStream s = File.Create("SerializedBinary.bin"))
 				formatter.Serialize(s, _participants);
 		}
 
 		private void btnDeserializeBinary_Click(object sender, EventArgs e)
 		{
-			IFormatter formatter = new BinaryFormatter();
+			BinaryFormatter formatter = new BinaryFormatter();
 			using (FileStream s = File.OpenRead("SerializedBinary.bin"))
 			{
 				_participants = (List<Participant>)formatter.Deserialize(s);

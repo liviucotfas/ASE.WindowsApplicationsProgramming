@@ -3,13 +3,14 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace ClockUserControl
+namespace ClockUserControlSample
 {
     public partial class Ceas : UserControl
     {
-        int _ora, _min, _sec;
-        int _oraAlarm,_minAlarm;
-        public event EventHandler Suna;
+	    private int _ora;
+	    private int _min;
+	    private int _sec;
+	    public event EventHandler Suna;
         public Ceas()
         {
             InitializeComponent();
@@ -50,17 +51,11 @@ namespace ClockUserControl
             }
         }
 
-        public int OraAlarm
-        {
-            get { return _oraAlarm; }
-            set { _oraAlarm = value; }
-        }
-        public int MinAlarm 
-        {
-            get { return _minAlarm; }
-            set { _minAlarm = value; }
-        }
-        #endregion
+        public int OraAlarm { get; set; }
+
+	    public int MinAlarm { get; set; }
+
+	    #endregion
 
         //se atasaza aceste atribute pentru a seta daca proprietatile pot fi vizibile sau nu in designer
         [Browsable(true),EditorBrowsable(EditorBrowsableState.Never),Category("Custom")]
@@ -89,10 +84,10 @@ namespace ClockUserControl
                 min = Convert.ToInt32(timp.Substring(3, 2));
                 sec = Convert.ToInt32(timp.Substring(6, 2));
             }*/
-            this.Invalidate();
-            if (_ora == this.OraAlarm && Suna != null) 
+            Invalidate();
+            if (_ora == OraAlarm && Suna != null) 
             {
-                if (_min == this.MinAlarm) 
+                if (_min == MinAlarm) 
                 {
                     Suna(this, new EventArgs());
                 }
