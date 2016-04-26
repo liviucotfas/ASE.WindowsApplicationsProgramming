@@ -19,7 +19,11 @@ namespace DataBindingSample.ViewModel
 				if (_lastName == value)
 					return;
 				_lastName = value;
-				OnPropertyChanged();
+
+				//If we use [CallerMemberName] in the OnPropertyChanged method
+				//OnPropertyChanged();
+				//If we don't use the [CallerMemberName] in the OnPropertyChanged method
+				OnPropertyChanged("LastName");
 			}
 		}
 		#endregion
@@ -77,9 +81,11 @@ namespace DataBindingSample.ViewModel
 		public event PropertyChangedEventHandler PropertyChanged;
 
 		[NotifyPropertyChangedInvocator]
+		// [CallerMemberName] - Allows you to obtain the method or property name of the caller to the method. https://msdn.microsoft.com/en-us/library/system.runtime.compilerservices.callermembernameattribute%28v=vs.110%29.aspx
 		protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
 		{
-			PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+			if(PropertyChanged != null)
+				PropertyChanged.Invoke(this, new PropertyChangedEventArgs(propertyName));
 		}
 		#endregion
 	}
