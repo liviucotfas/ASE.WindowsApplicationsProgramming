@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ClipboardSample
+namespace ClipboardSample.Entities
 {
 	internal class Participant
 	{

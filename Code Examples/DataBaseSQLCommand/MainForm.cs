@@ -99,6 +99,7 @@ namespace DataBaseCommand
 
 				dbCommand.Transaction.Commit();
 
+				//2. Add the new participants to the local collection
 				_participants.Add(participant);
 			}
 			catch (Exception)

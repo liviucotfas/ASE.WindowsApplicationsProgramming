@@ -1,6 +1,6 @@
-using ClockUserControl;
+using ClockUserControlSample;
 
-namespace ClockUserControlApp
+namespace ClockUserControlAppSample
 {
     partial class MainForm
     {

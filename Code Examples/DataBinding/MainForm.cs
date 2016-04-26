@@ -19,6 +19,7 @@ namespace DataBindingSample
 		private void MainForm_Load(object sender, EventArgs e)
 		{
 			dgvParticipants.DataSource = _viewModel.Participants;
+
 			tbLastName.DataBindings.Add("Text",_viewModel,"LastName",false,DataSourceUpdateMode.OnPropertyChanged);
 			tbFirstName.DataBindings.Add("Text", _viewModel, "FirstName", false, DataSourceUpdateMode.OnPropertyChanged);
 			dtpBirthDate.DataBindings.Add("Value", _viewModel, "BirthDate", false, DataSourceUpdateMode.OnPropertyChanged);
