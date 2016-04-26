@@ -33,9 +33,11 @@
 			// 
 			// pieChartControl1
 			// 
-			this.pieChartControl1.Location = new System.Drawing.Point(12, 12);
+			this.pieChartControl1.BackColor = System.Drawing.Color.White;
+			this.pieChartControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.pieChartControl1.Location = new System.Drawing.Point(0, 0);
 			this.pieChartControl1.Name = "pieChartControl1";
-			this.pieChartControl1.Size = new System.Drawing.Size(418, 323);
+			this.pieChartControl1.Size = new System.Drawing.Size(456, 351);
 			this.pieChartControl1.TabIndex = 0;
 			// 
 			// MainForm

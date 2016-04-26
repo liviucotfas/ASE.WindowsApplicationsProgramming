@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 using PieChartGraphicsSample.Entities;
 
@@ -13,8 +14,11 @@ namespace PieChartGraphicsSample
 			set
 			{
 				if(_data == value)
-				return;
+					return;
+
 				_data = value;
+
+				//trigger the Paint event
 				Invalidate();
 			}
 		}
@@ -23,31 +27,46 @@ namespace PieChartGraphicsSample
 		public PieChartControl()
 		{
 			InitializeComponent();
+
+			//redraws if resized
 			ResizeRedraw = true;
 
 			//Default data
 			Data = new[]
 			{
 				new PieChartCategory("Category 1", 20, Color.Red),
-				new PieChartCategory("Category 2", 80, Color.Blue),
+				new PieChartCategory("Category 2", 80, Color.Blue)
 			};
 		}
 
 		private void PieChartControl_Paint(object sender, PaintEventArgs e)
 		{
-			Graphics graphics = e.Graphics;
+			//width reserved for displaying the legend
+			int legendWidth = 150;
 
+			//get the drawing context
+			Graphics graphics = e.Graphics;
+			//get the drqwing area
+			Rectangle clipRectangle = e.ClipRectangle;
+			
+			//compute the maximum radius
+			float radius = Math.Min(clipRectangle.Height, clipRectangle.Width - legendWidth) / (float)2;
+
+			//determine the center of the pie
+			int xCenter = (clipRectangle.Width - legendWidth) / 2;
+			int yCenter = clipRectangle.Height / 2;
+
+			//determine the x and y coordinate of the pie
+			float x = xCenter - radius;
+			float y = yCenter - radius;
+
+			//determine the width and the height
+			float width = radius * 2;
+			float height = radius * 2;
+
+			//draw the pie sectors
 			float percent1 = 0;
 			float percent2 = 0;
-			const float radius = 75;
-			const int xCenter = 90;
-			const int yCenter = 150;
-
-			const float x = xCenter - radius;
-			const float y = yCenter - radius;
-			const float width = radius * 2;
-			const float height = radius * 2;
-
 			for (int i = 0; i < Data.Length; i++)
 			{
 				if (i >= 1)
@@ -63,13 +82,13 @@ namespace PieChartGraphicsSample
 				graphics.FillPie(b, x, y, width, height, angle1, angle2 - angle1);
 			}
 
+			//draw the pie contour
 			Pen pen = new Pen(Color.Black);
-
 			graphics.DrawEllipse(pen, x, y, width, height);
 
-			const float xpos = x + width + 20;
-			float ypos = y - 25;
-
+			//draw the chart legend
+			float xpos = x + width + 20;
+			float ypos = y;
 			for (int i = 0; i < Data.Length; i++)
 			{
 				Brush b = new SolidBrush(Data[i].Color);
