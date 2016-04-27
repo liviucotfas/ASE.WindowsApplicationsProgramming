@@ -161,6 +161,5 @@ namespace PrintingSample
 				_currentChar = 0;
 			}
 		}
-
 	}
 }
