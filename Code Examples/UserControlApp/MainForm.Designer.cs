@@ -32,7 +32,7 @@ namespace ClockUserControlAppSample
         {
 			this.tbOra = new System.Windows.Forms.TextBox();
 			this.btnGetSystemTime = new System.Windows.Forms.Button();
-			this.ceas = new Ceas();
+			this.ceas = new ClockUserControlSample.Ceas();
 			this.label1 = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
@@ -64,7 +64,7 @@ namespace ClockUserControlAppSample
 			this.ceas.Name = "ceas";
 			this.ceas.Ora = 0;
 			this.ceas.OraAlarm = 4;
-			this.ceas.Sec = 9;
+			this.ceas.Sec = 14;
 			this.ceas.Size = new System.Drawing.Size(208, 189);
 			this.ceas.TabIndex = 0;
 			this.ceas.Suna += new System.EventHandler(this.ceas1_Suna);
@@ -84,7 +84,7 @@ namespace ClockUserControlAppSample
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(472, 228);
+			this.ClientSize = new System.Drawing.Size(472, 287);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.btnGetSystemTime);
 			this.Controls.Add(this.tbOra);

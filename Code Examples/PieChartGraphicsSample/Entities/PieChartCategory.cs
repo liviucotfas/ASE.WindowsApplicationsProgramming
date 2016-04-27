@@ -2,7 +2,7 @@
 
 namespace PieChartGraphicsSample.Entities
 {
-	internal class PieChartCategory
+	public class PieChartCategory
 	{
 		public string Description { get; set; }
 

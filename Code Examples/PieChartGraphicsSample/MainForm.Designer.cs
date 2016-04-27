@@ -28,21 +28,34 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.pieChartControl1 = new PieChartGraphicsSample.PieChartControl();
 			this.SuspendLayout();
+			// 
+			// pieChartControl1
+			// 
+			this.pieChartControl1.BackColor = System.Drawing.Color.White;
+			this.pieChartControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.pieChartControl1.Location = new System.Drawing.Point(0, 0);
+			this.pieChartControl1.Name = "pieChartControl1";
+			this.pieChartControl1.Size = new System.Drawing.Size(456, 351);
+			this.pieChartControl1.TabIndex = 0;
 			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(307, 292);
+			this.ClientSize = new System.Drawing.Size(456, 351);
+			this.Controls.Add(this.pieChartControl1);
 			this.Name = "MainForm";
 			this.Text = "PieChart Sample";
-			this.Paint += new System.Windows.Forms.PaintEventHandler(this.MainForm_Paint);
+			this.Load += new System.EventHandler(this.MainForm_Load);
 			this.ResumeLayout(false);
 
 		}
 
 		#endregion
+
+		private PieChartControl pieChartControl1;
 	}
 }
 
