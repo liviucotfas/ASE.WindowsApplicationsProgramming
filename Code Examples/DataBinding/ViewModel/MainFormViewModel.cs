@@ -75,6 +75,11 @@ namespace DataBindingSample.ViewModel
 			LastName = FirstName = string.Empty;
 			BirthDate = DateTime.Today;
 		}
+
+		public void DeleteParticipant(Participant participant)
+		{
+			Participants.Remove(participant);
+		}
 		#endregion
 
 		#region INotifyPropertyChanged
