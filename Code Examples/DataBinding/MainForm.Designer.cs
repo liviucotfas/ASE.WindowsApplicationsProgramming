@@ -40,10 +40,11 @@ namespace DataBindingSample
 			this.label3 = new System.Windows.Forms.Label();
 			this.dtpBirthDate = new System.Windows.Forms.DateTimePicker();
 			this.dgvParticipants = new System.Windows.Forms.DataGridView();
-			this.participantBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.birthDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.participantBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.btnDelete = new System.Windows.Forms.Button();
 			this.groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgvParticipants)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.participantBindingSource)).BeginInit();
@@ -142,10 +143,6 @@ namespace DataBindingSample
 			this.dgvParticipants.Size = new System.Drawing.Size(686, 230);
 			this.dgvParticipants.TabIndex = 62;
 			// 
-			// participantBindingSource
-			// 
-			this.participantBindingSource.DataSource = typeof(Participant);
-			// 
 			// lastNameDataGridViewTextBoxColumn
 			// 
 			this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
@@ -165,11 +162,26 @@ namespace DataBindingSample
 			this.birthDateDataGridViewTextBoxColumn.Name = "birthDateDataGridViewTextBoxColumn";
 			this.birthDateDataGridViewTextBoxColumn.ReadOnly = true;
 			// 
+			// participantBindingSource
+			// 
+			this.participantBindingSource.DataSource = typeof(DataBindingSample.Entities.Participant);
+			// 
+			// btnDelete
+			// 
+			this.btnDelete.Location = new System.Drawing.Point(624, 376);
+			this.btnDelete.Name = "btnDelete";
+			this.btnDelete.Size = new System.Drawing.Size(75, 23);
+			this.btnDelete.TabIndex = 63;
+			this.btnDelete.Text = "Delete";
+			this.btnDelete.UseVisualStyleBackColor = true;
+			this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(707, 380);
+			this.ClientSize = new System.Drawing.Size(707, 411);
+			this.Controls.Add(this.btnDelete);
 			this.Controls.Add(this.dgvParticipants);
 			this.Controls.Add(this.groupBox1);
 			this.Name = "MainForm";
@@ -196,6 +208,7 @@ namespace DataBindingSample
 		private System.Windows.Forms.DataGridViewTextBoxColumn lastNameDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn firstNameDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn birthDateDataGridViewTextBoxColumn;
+		private System.Windows.Forms.Button btnDelete;
 	}
 }
 
