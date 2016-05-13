@@ -5,13 +5,13 @@ using System.Windows.Forms;
 
 namespace ClockUserControlSample
 {
-    public partial class Ceas : UserControl
+    public partial class ClockUserControl : UserControl
     {
 	    private int _ora;
 	    private int _min;
 	    private int _sec;
-	    public event EventHandler Suna;
-        public Ceas()
+	    public event EventHandler Ring;
+        public ClockUserControl()
         {
             InitializeComponent();
             ResizeRedraw = true;
@@ -85,16 +85,16 @@ namespace ClockUserControlSample
                 sec = Convert.ToInt32(timp.Substring(6, 2));
             }*/
             Invalidate();
-            if (_ora == OraAlarm && Suna != null) 
+            if (_ora == OraAlarm && Ring != null) 
             {
                 if (_min == MinAlarm) 
                 {
-                    Suna(this, new EventArgs());
+                    Ring(this, new EventArgs());
                 }
             }
         }
 
-        public void Ceas_Paint(object sender, PaintEventArgs e)
+        public void CLockUserControl_Paint(object sender, PaintEventArgs e)
         {
             int i;
             //definim tipul pensulei ca sa reprezentam minutarul, secundarul si orarul
@@ -120,7 +120,7 @@ namespace ClockUserControlSample
             //definim centrul cercului
             int x0 = r.X += r.Width / 2;
             int y0 = r.Y += r.Height / 2;
-            cerculet(x0, y0, 5, g);
+            DrawCircle(x0, y0, 5, g);
             //desenam cadranul
             for (i = 0; i < 12; i++)
             {
@@ -128,7 +128,7 @@ namespace ClockUserControlSample
                 x = x0 + (int)(raza * Math.Cos(i * Math.PI / 6.0));
                 y = y0 - (int)(raza * Math.Sin(i * Math.PI / 6.0));
                 //functia care deseneaza patratelul pentru fiecare 
-                patratel(x, y, 8, g);
+                DrawSquare(x, y, 8, g);
             }
             Point centru = new Point(x0, y0);
             //desenam capatul secundarului
@@ -140,7 +140,7 @@ namespace ClockUserControlSample
             g.DrawLine(penOra,centru,oraC);
         }
 
-        private void patratel(int x, int y, int raza, Graphics g)
+        private void DrawSquare(int x, int y, int raza, Graphics g)
         {
            //se deseneaza un cerc cu centru si raza date
             Rectangle r = new Rectangle(new Point(x - raza, y - raza), new Size(2 * raza, 2 * raza));
@@ -148,7 +148,7 @@ namespace ClockUserControlSample
             g.FillEllipse(b,r);
         }
 
-        private void cerculet(int x0, int y0, int latura, Graphics g)
+        private void DrawCircle(int x0, int y0, int latura, Graphics g)
         {
             //se dau centrul si latura patratului
             Rectangle r = new Rectangle(new Point(x0 - latura / 2, y0 - latura / 2), new Size(latura, latura));

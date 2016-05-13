@@ -21,11 +21,11 @@ namespace DragDropSample
 		/// </summary>
 		/// <param name="sender">The source of the event.</param>
 		/// <param name="e">A MouseEventArgs that contains the event data.</param>
-		private void textBox1_MouseDown(object sender, MouseEventArgs e)
+		private void tbText_MouseDown(object sender, MouseEventArgs e)
 		{
 			// This initiates a DragDrop operation, specifying that the data to be dragged
-			// with be the text stored in the textBox1 control.
-			textBox1.DoDragDrop(textBox1.Text, DragDropEffects.Copy);
+			// with be the text stored in the tbText control.
+			tbText.DoDragDrop(tbText.Text, DragDropEffects.Copy);
 		}
 
 		/// <summary>
@@ -33,12 +33,12 @@ namespace DragDropSample
 		/// </summary>
 		/// <param name="sender">The source of the event.</param>
 		/// <param name="e">A MouseEventArgs that contains the event data.</param>
-		private void numericUpDown1_MouseDown(object sender, MouseEventArgs e)
+		private void numericUpDown_MouseDown(object sender, MouseEventArgs e)
 		{
 			// This initiates a DragDrop operation, specifying that the data to be dragged
-			// with be the value stored in the numericUpDown1 control.
-			numericUpDown1.DoDragDrop(
-				numericUpDown1.Value.ToString(CultureInfo.InvariantCulture), 
+			// with be the value stored in the numericUpDown control.
+			numericUpDown.DoDragDrop(
+				numericUpDown.Value.ToString(CultureInfo.InvariantCulture), 
 				DragDropEffects.Copy);
 		}
 
@@ -47,12 +47,12 @@ namespace DragDropSample
 		/// </summary>
 		/// <param name="sender">The source of the event.</param>
 		/// <param name="e">A MouseEventArgs that contains the event data.</param>
-		private void dateTimePicker1_MouseDown(object sender, MouseEventArgs e)
+		private void dateTimePicker_MouseDown(object sender, MouseEventArgs e)
 		{
 			// This initiates a DragDrop operation, specifying that the data to be dragged
-			// with be the value stored in the dateTimePicker1 control.
-			dateTimePicker1.DoDragDrop(
-				dateTimePicker1.Value.ToString(CultureInfo.InvariantCulture), 
+			// with be the value stored in the dateTimePicker control.
+			dateTimePicker.DoDragDrop(
+				dateTimePicker.Value.ToString(CultureInfo.InvariantCulture), 
 				DragDropEffects.Copy);
 		}
 
@@ -69,18 +69,18 @@ namespace DragDropSample
 		/// </summary>
 		/// <param name="sender">The source of the event.</param>
 		/// <param name="e">A DragEventArgs that contains the event data.</param>
-		private void listBox1_DragEnter(object sender, System.Windows.Forms.DragEventArgs e)
+		private void listBox_DragEnter(object sender, DragEventArgs e)
 		{
 			// Display some information about the DragDrop information in the
-			// richTextBox1 control to show some of the information available.
-			richTextBox1.Text = "Allowed Effect: " + e.AllowedEffect +
+			// richTextBox control to show some of the information available.
+			richTextBox.Text = "Allowed Effect: " + e.AllowedEffect +
 			"\r\nAvailable Formats:\r\n";
 
 			// Data may be available in more than one format, so loop through
 			// all available formats and display them in richTextBox1.
 			foreach (string availableFormat in e.Data.GetFormats(true))
 			{
-				richTextBox1.Text += "\t" + availableFormat + "\r\n";
+				richTextBox.Text += "\t" + availableFormat + "\r\n";
 			}
 
 			// This control will use any dropped data to add items to the listbox.
@@ -115,12 +115,12 @@ namespace DragDropSample
 		/// </summary>
 		/// <param name="sender">The source of the event.</param>
 		/// <param name="e">A DragEventArgs that contains the event data.</param>
-		private void listBox1_DragDrop(object sender, DragEventArgs e)
+		private void listBox_DragDrop(object sender, DragEventArgs e)
 		{
 			if (e.Data.GetDataPresent(DataFormats.Text, true))
 			{
 				// Create the list item using the data provided by the source control.
-				listBox1.Items.Add(e.Data.GetData(DataFormats.Text));
+				listBox.Items.Add(e.Data.GetData(DataFormats.Text));
 			}
 		}
 	}

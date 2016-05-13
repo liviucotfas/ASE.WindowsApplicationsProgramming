@@ -40,19 +40,19 @@ namespace ClockUserControlAppSample
             string[] sir;
             string date = e.Data.GetData(DataFormats.Text).ToString();
             sir = date.Split(':');
-            ceas.Ora = int.Parse(sir[0]);
-            ceas.Min = int.Parse(sir[1]);
+            _clockUserControl.Ora = int.Parse(sir[0]);
+            _clockUserControl.Min = int.Parse(sir[1]);
             //Setam acceasi ora/min si pentru alarma =>va porni alarma
-            ceas.OraAlarm = ceas.Ora;
-            ceas.MinAlarm = ceas.Min;
-            ceas.Invalidate();
+            _clockUserControl.OraAlarm = _clockUserControl.Ora;
+            _clockUserControl.MinAlarm = _clockUserControl.Min;
+            _clockUserControl.Invalidate();
         }
 
         private void btnGetSystemTime_Click(object sender, EventArgs e)
         {
-            ceas.Ora = DateTime.Now.Hour;
-            ceas.Min = DateTime.Now.Minute;
-            ceas.Sec = DateTime.Now.Second;
+            _clockUserControl.Ora = DateTime.Now.Hour;
+            _clockUserControl.Min = DateTime.Now.Minute;
+            _clockUserControl.Sec = DateTime.Now.Second;
         }
     }
 }

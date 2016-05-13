@@ -28,80 +28,80 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-			this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-			this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.listBox1 = new System.Windows.Forms.ListBox();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+			this.richTextBox = new System.Windows.Forms.RichTextBox();
+			this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
+			this.numericUpDown = new System.Windows.Forms.NumericUpDown();
+			this.tbText = new System.Windows.Forms.TextBox();
+			this.listBox = new System.Windows.Forms.ListBox();
+			((System.ComponentModel.ISupportInitialize)(this.numericUpDown)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// richTextBox1
 			// 
-			this.richTextBox1.Location = new System.Drawing.Point(12, 116);
-			this.richTextBox1.Name = "richTextBox1";
-			this.richTextBox1.Size = new System.Drawing.Size(192, 144);
-			this.richTextBox1.TabIndex = 9;
-			this.richTextBox1.Text = "";
+			this.richTextBox.Location = new System.Drawing.Point(12, 116);
+			this.richTextBox.Name = "richTextBox";
+			this.richTextBox.Size = new System.Drawing.Size(192, 144);
+			this.richTextBox.TabIndex = 9;
+			this.richTextBox.Text = "";
 			// 
 			// dateTimePicker1
 			// 
-			this.dateTimePicker1.Location = new System.Drawing.Point(12, 76);
-			this.dateTimePicker1.Name = "dateTimePicker1";
-			this.dateTimePicker1.Size = new System.Drawing.Size(192, 20);
-			this.dateTimePicker1.TabIndex = 8;
-			this.dateTimePicker1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.dateTimePicker1_MouseDown);
+			this.dateTimePicker.Location = new System.Drawing.Point(12, 76);
+			this.dateTimePicker.Name = "dateTimePicker";
+			this.dateTimePicker.Size = new System.Drawing.Size(192, 20);
+			this.dateTimePicker.TabIndex = 8;
+			this.dateTimePicker.MouseDown += new System.Windows.Forms.MouseEventHandler(this.dateTimePicker_MouseDown);
 			// 
 			// numericUpDown1
 			// 
-			this.numericUpDown1.Location = new System.Drawing.Point(12, 44);
-			this.numericUpDown1.Maximum = new decimal(new int[] {
+			this.numericUpDown.Location = new System.Drawing.Point(12, 44);
+			this.numericUpDown.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
-			this.numericUpDown1.Name = "numericUpDown1";
-			this.numericUpDown1.Size = new System.Drawing.Size(192, 20);
-			this.numericUpDown1.TabIndex = 7;
-			this.numericUpDown1.Value = new decimal(new int[] {
+			this.numericUpDown.Name = "numericUpDown";
+			this.numericUpDown.Size = new System.Drawing.Size(192, 20);
+			this.numericUpDown.TabIndex = 7;
+			this.numericUpDown.Value = new decimal(new int[] {
             123456,
             0,
             0,
             0});
-			this.numericUpDown1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.numericUpDown1_MouseDown);
+			this.numericUpDown.MouseDown += new System.Windows.Forms.MouseEventHandler(this.numericUpDown_MouseDown);
 			// 
-			// textBox1
+			// tbText
 			// 
-			this.textBox1.Location = new System.Drawing.Point(12, 12);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(192, 20);
-			this.textBox1.TabIndex = 6;
-			this.textBox1.Text = "This is a test message";
-			this.textBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.textBox1_MouseDown);
+			this.tbText.Location = new System.Drawing.Point(12, 12);
+			this.tbText.Name = "tbText";
+			this.tbText.Size = new System.Drawing.Size(192, 20);
+			this.tbText.TabIndex = 6;
+			this.tbText.Text = "This is a test message";
+			this.tbText.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tbText_MouseDown);
 			// 
 			// listBox1
 			// 
-			this.listBox1.AllowDrop = true;
-			this.listBox1.Location = new System.Drawing.Point(220, 12);
-			this.listBox1.Name = "listBox1";
-			this.listBox1.Size = new System.Drawing.Size(168, 251);
-			this.listBox1.TabIndex = 5;
-			this.listBox1.DragDrop += new System.Windows.Forms.DragEventHandler(this.listBox1_DragDrop);
-			this.listBox1.DragEnter += new System.Windows.Forms.DragEventHandler(this.listBox1_DragEnter);
+			this.listBox.AllowDrop = true;
+			this.listBox.Location = new System.Drawing.Point(220, 12);
+			this.listBox.Name = "listBox";
+			this.listBox.Size = new System.Drawing.Size(168, 251);
+			this.listBox.TabIndex = 5;
+			this.listBox.DragDrop += new System.Windows.Forms.DragEventHandler(this.listBox_DragDrop);
+			this.listBox.DragEnter += new System.Windows.Forms.DragEventHandler(this.listBox_DragEnter);
 			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(403, 278);
-			this.Controls.Add(this.richTextBox1);
-			this.Controls.Add(this.dateTimePicker1);
-			this.Controls.Add(this.numericUpDown1);
-			this.Controls.Add(this.textBox1);
-			this.Controls.Add(this.listBox1);
+			this.Controls.Add(this.richTextBox);
+			this.Controls.Add(this.dateTimePicker);
+			this.Controls.Add(this.numericUpDown);
+			this.Controls.Add(this.tbText);
+			this.Controls.Add(this.listBox);
 			this.Name = "MainForm";
 			this.Text = "DragDrop Sample";
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.numericUpDown)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -109,11 +109,11 @@
 
 		#endregion
 
-		private System.Windows.Forms.RichTextBox richTextBox1;
-		private System.Windows.Forms.DateTimePicker dateTimePicker1;
-		private System.Windows.Forms.NumericUpDown numericUpDown1;
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.ListBox listBox1;
+		private System.Windows.Forms.RichTextBox richTextBox;
+		private System.Windows.Forms.DateTimePicker dateTimePicker;
+		private System.Windows.Forms.NumericUpDown numericUpDown;
+		private System.Windows.Forms.TextBox tbText;
+		private System.Windows.Forms.ListBox listBox;
 	}
 }
 

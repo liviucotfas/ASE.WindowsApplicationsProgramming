@@ -8,7 +8,7 @@ namespace PrintingSample
 	{
 		#region Attributes
 		//A very long text
-		private const string _text = @"Lincoln's Gettysburg Address (November 19, 1863)
+		private const string LongText = @"Lincoln's Gettysburg Address (November 19, 1863)
 
 	Four score and seven years ago our fathers brought forth on this continent a new nation, conceived in liberty and dedicated to the proposition that all men are created equal.
 
@@ -28,7 +28,7 @@ namespace PrintingSample
 		}
 		private void MainForm_Load(object sender, EventArgs e)
 		{
-			txtDocument.Text = _text;
+			txtDocument.Text = LongText;
 		}
 
 		/// <summary>
@@ -40,8 +40,8 @@ namespace PrintingSample
 		{
 			try
 			{
-				printPreviewDialog1.Document = printDocument;
-				printPreviewDialog1.ShowDialog();
+				printPreviewDialog.Document = printDocument;
+				printPreviewDialog.ShowDialog();
 			}
 			catch (Exception)
 			{
@@ -49,7 +49,7 @@ namespace PrintingSample
 			}
 		}
 		
-		// <summary>
+		/// <summary>
 		/// The PrintDialog allows the user to select the printer that they want to print 
 		/// to, as well as other printing options.
 		/// </summary>
@@ -68,12 +68,12 @@ namespace PrintingSample
 		/// </summary>
 		private void btnPageSetup_Click(object sender, EventArgs e)
 		{
-			pageSetupDialog1.Document = printDocument;
-			pageSetupDialog1.PageSettings = printDocument.DefaultPageSettings;
+			pageSetupDialog.Document = printDocument;
+			pageSetupDialog.PageSettings = printDocument.DefaultPageSettings;
 
-			if (pageSetupDialog1.ShowDialog() == DialogResult.OK)
+			if (pageSetupDialog.ShowDialog() == DialogResult.OK)
 			{
-				printDocument.DefaultPageSettings = pageSetupDialog1.PageSettings;
+				printDocument.DefaultPageSettings = pageSetupDialog.PageSettings;
 			}
 		}
 
