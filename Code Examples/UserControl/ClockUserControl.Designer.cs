@@ -1,6 +1,6 @@
 namespace ClockUserControlSample
 {
-    partial class Ceas
+    partial class ClockUserControl
     {
         /// <summary>
         /// Required designer variable.
@@ -44,9 +44,9 @@ namespace ClockUserControlSample
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Name = "Ceas";
+            this.Name = "ClockUserControl";
             this.Size = new System.Drawing.Size(274, 263);
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Ceas_Paint);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.CLockUserControl_Paint);
             this.ResumeLayout(false);
 
         }

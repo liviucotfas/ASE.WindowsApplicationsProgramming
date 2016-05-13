@@ -28,10 +28,10 @@ namespace PieChartGraphicsSample
 		{
 			InitializeComponent();
 
-			//redraws if resized
+			//redraws the chart if the control is resized
 			ResizeRedraw = true;
 
-			//Default data
+			//default data
 			Data = new[]
 			{
 				new PieChartCategory("Category 1", 20, Color.Red),
@@ -46,7 +46,7 @@ namespace PieChartGraphicsSample
 
 			//get the drawing context
 			Graphics graphics = e.Graphics;
-			//get the drqwing area
+			//get the drawing area
 			Rectangle clipRectangle = e.ClipRectangle;
 			
 			//compute the maximum radius
