@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SQLite;
 using System.Windows.Forms;
-using DataBaseSQLCommand.Entities;
+using DataBaseCommand.Entities;
 
 namespace DataBaseCommand
 {

@@ -1,8 +1,7 @@
 ﻿using System;
-using ValidationCustomExceptions.Entities;
 using ValidationExceptionHandeling.Entities;
 
-namespace Validation.Entities
+namespace ValidationCustomExceptions.Entities
 {
 	internal class Participant
 	{
