@@ -170,6 +170,8 @@
 			// 
 			// dtpBirthDate
 			// 
+			this.dtpBirthDate.CustomFormat = "yyyy.MM.dd HH:mm";
+			this.dtpBirthDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
 			this.dtpBirthDate.Location = new System.Drawing.Point(467, 29);
 			this.dtpBirthDate.Name = "dtpBirthDate";
 			this.dtpBirthDate.Size = new System.Drawing.Size(200, 20);
